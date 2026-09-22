@@ -102,24 +102,24 @@ The values below are the defaults stored in the current workflow. They should be
 | --- | ---: | --- |
 | `InputMode` | `unstitched` | Input type: `stitched` image or folder of `unstitched` tiles. |
 | `nameOfNegativeControl` | empty | Negative-control filename for stitched input or folder name for unstitched input. |
-| `CoverageThreshold` | `162` | Manual fluorescence-intensity threshold. Use this only when no negative control is specified. |
-| `Radius` | `14` | Physical radius of the circular sample in millimetres. |
-| `Resolution` | `345` | Image resolution in nanometres per pixel, used to convert the disk radius to pixels. |
+| `CoverageThreshold` | `` | Manual fluorescence-intensity threshold. Use this only when no negative control is specified. |
+| `Radius` | `` | Physical radius of the circular sample in millimetres. |
+| `Resolution` | `` | Image resolution in nanometres per pixel, used to convert the disk radius to pixels. |
 | `C` | `1` | One-based channel index to analyse. |
 | `Z` | `1` | One-based Z-slice index to analyse. |
 | `T` | `1` | One-based time-point index to analyse. |
 | `StackOrder` | `XYCZT` | Dimension order used by Bio-Formats. |
 | `TileWidth` | empty | Tile width in pixels for stitched mosaics. |
 | `TileHeight` | empty | Tile height in pixels for stitched mosaics. |
-| `TilesX` | `23` | Number of tiles along the X direction. |
-| `TilesY` | `23` | Number of tiles along the Y direction. |
-| `OverlapX` | `10` | Horizontal overlap between adjacent tiles, in percent. |
-| `OverlapY` | `10` | Vertical overlap between adjacent tiles, in percent. |
+| `TilesX` | `1` | Number of tiles along the X direction. |
+| `TilesY` | `1` | Number of tiles along the Y direction. |
+| `OverlapX` | `0` | Horizontal overlap between adjacent tiles, in percent. |
+| `OverlapY` | `0` | Vertical overlap between adjacent tiles, in percent. |
 | `TileScanOrder` | `Raster` | Tile order: `Raster` or `Serpentine`. |
-| `ApplyBaSiC` | `true` | Apply BaSiC illumination correction. Requires more than one tile. |
-| `Stitching` | `true` | Stitch processed tiles. Requires more than one tile and nonzero overlap in at least one direction. |
-| `Scale` | `0.1` | Scaling factor applied during tile reconstruction; `1` preserves the original dimensions. |
-| `MaxBlockPixels` | `250000000` | Maximum number of pixels imported in one block for a large stitched image. |
+| `ApplyBaSiC` | `false` | Apply BaSiC illumination correction. Requires more than one tile. |
+| `Stitching` | `false` | Stitch processed tiles. Requires more than one tile and nonzero overlap in at least one direction. |
+| `Scale` | `1` | Scaling factor applied during tile reconstruction; `1` preserves the original dimensions. |
+| `MaxBlockPixels` | `1000000000` | Maximum number of pixels imported in one block for a large stitched image. |
 
 Exactly one threshold source must be provided: either `nameOfNegativeControl` or `CoverageThreshold`. Providing both, or leaving both empty, stops the workflow with an error.
 
