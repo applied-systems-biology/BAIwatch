@@ -33,23 +33,6 @@ flowchart TD
     H --> I[Coverage CSV]
 ```
 
-The main processing stages are:
-
-1. **Data import** — BAIwatch reads a stitched image or an ordered series of unstitched tiles. Large stitched images are imported in blocks when their size exceeds `MaxBlockPixels`.
-2. **Tile reconstruction** — Tiles are ordered according to a raster or serpentine scan and assembled into a reduced montage for disk detection.
-3. **Disk detection** — A 4,000-pixel-wide montage is processed with edge detection and template correlation to locate the circular sample. The resulting ROI is saved beside the input as a `.zip` file and reused if it already exists.
-4. **Illumination correction** — If enabled, tiles fully inside the disk are used to estimate BaSiC flat-field and dark-field profiles. The profiles are then applied to the complete tile stack.
-5. **Stitching** — Corrected tiles can be stitched with linear blending. Stitching is limited to stacks containing no more than 1,000,000,000 spatial pixels.
-6. **Threshold selection** — The threshold is either supplied manually or calculated from the negative control as
-
-   $$T = \mu_{\mathrm{control}} + 3\sigma_{\mathrm{control}}$$
-
-7. **Coverage measurement** — Pixels above the selected threshold are counted only within the disk mask:
-
-   $$\mathrm{Coverage}\;(\%) = 100 \times \frac{\sum (S \cap M)}{\sum M}$$
-
-   where $S$ is the binary fluorescence segmentation and $M$ is the disk mask.
-
 ## Requirements
 
 - [Fiji/ImageJ](https://fiji.sc/) with:
