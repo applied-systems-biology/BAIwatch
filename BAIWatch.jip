@@ -22,7 +22,7 @@
     } ],
     "acknowledgements" : [ ],
     "website" : "",
-    "license" : "",
+    "license" : "MIT",
     "citation" : "",
     "dependency-citations" : [ ],
     "categories" : [ ],
@@ -101,7 +101,7 @@
               "description" : "The path that will be referenced",
               "hidden" : false,
               "field-class" : "java.nio.file.Path",
-              "value" : "C:/Users/mzerd/Desktop/dd/gigi/BAIwatch/Validation/1 - input/unstitched",
+              "value" : "BAIwatch/Validation/1 - input/stitched",
               "short-key" : "path",
               "ui-order" : -90,
               "field-class-id" : "path"
@@ -159,7 +159,7 @@
               "description" : "The path that will be referenced",
               "hidden" : false,
               "field-class" : "java.nio.file.Path",
-              "value" : "C:/Users/mzerd/Desktop/dd/gigi/BAIwatch/Pipeline/outputs",
+              "value" : "BAIwatch/Pipeline/outputs",
               "short-key" : "path",
               "ui-order" : -90,
               "field-class-id" : "path"
@@ -220,7 +220,7 @@
           "description" : "Select whether the input is a <strong data-start=\"30\" data-end=\"48\">stitched \n    image</strong> or a <strong data-start=\"54\" data-end=\"84\">folder of \n    unstitched tiles</strong>. Tile filenames must include numbers that order \n    the tiles according to their acquisition sequence, using either raster or \n    serpentine scanning.",
           "hidden" : false,
           "field-class" : "java.lang.String",
-          "value" : "unstitched",
+          "value" : "stitched",
           "short-key" : "InputMode",
           "ui-order" : 0,
           "field-class-id" : "string"
@@ -275,7 +275,7 @@
           "description" : "<p>\n      Intensity threshold used to classify pixels as fluorescence-positive \n      during surface-coverage quantification.\n    </p>",
           "hidden" : false,
           "field-class" : "java.lang.String",
-          "value" : "162",
+          "value" : "300",
           "short-key" : "CoverageThreshold",
           "ui-order" : 0,
           "field-class-id" : "string"
@@ -441,9 +441,9 @@
   },
   "dependencies" : [ {
     "metadata" : {
-      "name" : "Multi parameter algorithms",
-      "description" : "<html><head></head><body>Extension that provides capabilities to run multiple parameters</body></html>",
-      "summary" : "<html><head></head><body>Extension that provides capabilities to run multiple parameters</body></html>",
+      "name" : "Compartment management",
+      "description" : "<html><head></head><body>Data types required for graph compartment management</body></html>",
+      "summary" : "<html><head></head><body>Data types required for graph compartment management</body></html>",
       "authors" : [ {
         "title" : "Dr.",
         "first-name" : "Zoltán",
@@ -509,9 +509,9 @@
       "license" : "MIT",
       "citation" : "Gerst, R., Cseresnyés, Z. & Figge, M.T. JIPipe: visual batch processing for ImageJ. Nat Methods (2023). https://doi.org/10.1038/s41592-022-01744-4",
       "dependency-citations" : [ ],
-      "categories" : [ "Core", "Scripting" ]
+      "categories" : [ "Core" ]
     },
-    "id" : "org.hkijena.jipipe:multi-parameters-algorithms",
+    "id" : "org.hkijena.jipipe:compartments",
     "version" : "6.0.0",
     "provides" : [ ],
     "ij:update-site-dependencies" : [ ],
@@ -519,9 +519,9 @@
     "ij:update-site-providers" : [ ]
   }, {
     "metadata" : {
-      "name" : "Python integration (nodes)",
-      "description" : "<html><head></head><body>Provides algorithms and data types that allow Python scripting</body></html>",
-      "summary" : "<html><head></head><body>Provides algorithms and data types that allow Python scripting</body></html>",
+      "name" : "Utilities",
+      "description" : "<html><head></head><body>Utility algorithms</body></html>",
+      "summary" : "<html><head></head><body>Utility algorithms</body></html>",
       "authors" : [ {
         "title" : "Dr.",
         "first-name" : "Zoltán",
@@ -587,9 +587,9 @@
       "license" : "MIT",
       "citation" : "Gerst, R., Cseresnyés, Z. & Figge, M.T. JIPipe: visual batch processing for ImageJ. Nat Methods (2023). https://doi.org/10.1038/s41592-022-01744-4",
       "dependency-citations" : [ ],
-      "categories" : [ "Scripting" ]
+      "categories" : [ "Data processing", "Scripting" ]
     },
-    "id" : "org.hkijena.jipipe:python",
+    "id" : "org.hkijena.jipipe:utils",
     "version" : "6.0.0",
     "provides" : [ ],
     "ij:update-site-dependencies" : [ ],
@@ -597,7 +597,7 @@
     "ij:update-site-providers" : [ ]
   }, {
     "metadata" : {
-      "name" : "Standard table operations",
+      "name" : "Napari integration",
       "description" : "<html><head></head><body>A JIPipe project</body></html>",
       "summary" : "<html><head></head><body></body></html>",
       "authors" : [ ],
@@ -608,26 +608,7 @@
       "dependency-citations" : [ ],
       "categories" : [ ]
     },
-    "id" : "org.hkijena.jipipe:table-operations",
-    "version" : "6.0.0",
-    "provides" : [ ],
-    "ij:update-site-dependencies" : [ ],
-    "dependencies" : [ ],
-    "ij:update-site-providers" : [ ]
-  }, {
-    "metadata" : {
-      "name" : "Forms",
-      "description" : "<html><head></head><body>A JIPipe project</body></html>",
-      "summary" : "<html><head></head><body></body></html>",
-      "authors" : [ ],
-      "acknowledgements" : [ ],
-      "website" : "",
-      "license" : "",
-      "citation" : "",
-      "dependency-citations" : [ ],
-      "categories" : [ ]
-    },
-    "id" : "org.hkijena.jipipe:forms",
+    "id" : "org.hkijena.jipipe:napari",
     "version" : "6.0.0",
     "provides" : [ ],
     "ij:update-site-dependencies" : [ ],
@@ -713,6 +694,103 @@
     "ij:update-site-providers" : [ ]
   }, {
     "metadata" : {
+      "name" : "Python integration (nodes)",
+      "description" : "<html><head></head><body>Provides algorithms and data types that allow Python scripting</body></html>",
+      "summary" : "<html><head></head><body>Provides algorithms and data types that allow Python scripting</body></html>",
+      "authors" : [ {
+        "title" : "Dr.",
+        "first-name" : "Zoltán",
+        "last-name" : "Cseresnyés",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Applied Systems Biology, Leibniz Institute for Natural Product Research and Infection Biology – Hans-Knöll-Institute, Jena, Germany",
+          "ror" : "https://ror.org/055s37c97",
+          "website" : "https://www.leibniz-hki.de"
+        } ],
+        "website" : "https://www.leibniz-hki.de/en/staff-details.html?member=144",
+        "contact" : null,
+        "email" : "zoltan.cseresnyes@leibniz-hki.de",
+        "first-author" : true,
+        "corresponding-author" : false,
+        "orcid" : "https://orcid.org/0000-0002-6574-2588",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : "",
+        "first-name" : "Ruman",
+        "last-name" : "Gerst",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Applied Systems Biology, Leibniz Institute for Natural Product Research and Infection Biology – Hans-Knöll-Institute, Jena, Germany",
+          "ror" : "https://ror.org/055s37c97",
+          "website" : "https://www.leibniz-hki.de"
+        }, {
+          "name" : "Faculty of Biological Sciences, Friedrich Schiller University Jena, Germany",
+          "ror" : "https://ror.org/05qpz1x62",
+          "website" : "https://www.uni-jena.de"
+        } ],
+        "website" : "https://www.leibniz-hki.de/en/staff-details.html?member=1027",
+        "contact" : null,
+        "email" : "ruman.gerst@leibniz-hki.de",
+        "first-author" : true,
+        "corresponding-author" : false,
+        "orcid" : "https://orcid.org/0000-0002-0723-6038",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : "Prof. Dr.",
+        "first-name" : "Marc Thilo",
+        "last-name" : "Figge",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Applied Systems Biology, Leibniz Institute for Natural Product Research and Infection Biology – Hans-Knöll-Institute, Jena, Germany",
+          "ror" : "https://ror.org/055s37c97",
+          "website" : "https://www.leibniz-hki.de"
+        }, {
+          "name" : "Institute of Microbiology, Faculty of Biological Sciences, Friedrich Schiller University Jena, Germany",
+          "ror" : "https://ror.org/05qpz1x62",
+          "website" : "https://www.uni-jena.de/mikrobiologie"
+        } ],
+        "website" : "https://www.leibniz-hki.de/en/staff-details.html?member=81",
+        "contact" : null,
+        "email" : "thilo.figge@leibniz-hki.de",
+        "first-author" : false,
+        "corresponding-author" : true,
+        "orcid" : "https://orcid.org/0000-0002-4044-9166",
+        "custom-text" : "<html><head></head><body></body></html>"
+      } ],
+      "acknowledgements" : [ ],
+      "website" : "https://www.jipipe.org/",
+      "license" : "MIT",
+      "citation" : "Gerst, R., Cseresnyés, Z. & Figge, M.T. JIPipe: visual batch processing for ImageJ. Nat Methods (2023). https://doi.org/10.1038/s41592-022-01744-4",
+      "dependency-citations" : [ ],
+      "categories" : [ "Scripting" ]
+    },
+    "id" : "org.hkijena.jipipe:python",
+    "version" : "6.0.0",
+    "provides" : [ ],
+    "ij:update-site-dependencies" : [ ],
+    "dependencies" : [ ],
+    "ij:update-site-providers" : [ ]
+  }, {
+    "metadata" : {
+      "name" : "Core",
+      "description" : "<html><head></head><body>A JIPipe project</body></html>",
+      "summary" : "<html><head></head><body></body></html>",
+      "authors" : [ ],
+      "acknowledgements" : [ ],
+      "website" : "",
+      "license" : "",
+      "citation" : "",
+      "dependency-citations" : [ ],
+      "categories" : [ ]
+    },
+    "id" : "org.hkijena.jipipe:core",
+    "version" : "6.0.0",
+    "provides" : [ ],
+    "ij:update-site-dependencies" : [ ],
+    "dependencies" : [ ],
+    "ij:update-site-providers" : [ ]
+  }, {
+    "metadata" : {
       "name" : "Node grouping",
       "description" : "<html><head></head><body>Provides algorithms that wrap around algorithm graphs</body></html>",
       "summary" : "<html><head></head><body>Provides algorithms that wrap around algorithm graphs</body></html>",
@@ -791,200 +869,6 @@
     "ij:update-site-providers" : [ ]
   }, {
     "metadata" : {
-      "name" : "Core",
-      "description" : "<html><head></head><body>A JIPipe project</body></html>",
-      "summary" : "<html><head></head><body></body></html>",
-      "authors" : [ ],
-      "acknowledgements" : [ ],
-      "website" : "",
-      "license" : "",
-      "citation" : "",
-      "dependency-citations" : [ ],
-      "categories" : [ ]
-    },
-    "id" : "org.hkijena.jipipe:core",
-    "version" : "6.0.0",
-    "provides" : [ ],
-    "ij:update-site-dependencies" : [ ],
-    "dependencies" : [ ],
-    "ij:update-site-providers" : [ ]
-  }, {
-    "metadata" : {
-      "name" : "Strings",
-      "description" : "<html><head></head><body>A JIPipe project</body></html>",
-      "summary" : "<html><head></head><body></body></html>",
-      "authors" : [ ],
-      "acknowledgements" : [ ],
-      "website" : "",
-      "license" : "",
-      "citation" : "",
-      "dependency-citations" : [ ],
-      "categories" : [ ]
-    },
-    "id" : "org.hkijena.jipipe:strings",
-    "version" : "6.0.0",
-    "provides" : [ ],
-    "ij:update-site-dependencies" : [ ],
-    "dependencies" : [ ],
-    "ij:update-site-providers" : [ ]
-  }, {
-    "metadata" : {
-      "name" : "Filesystem types and algorithms",
-      "description" : "<html><head></head><body>Data types and algorithms for interacting with files and folders</body></html>",
-      "summary" : "<html><head></head><body>Data types and algorithms for interacting with files and folders</body></html>",
-      "authors" : [ {
-        "title" : "Dr.",
-        "first-name" : "Zoltán",
-        "last-name" : "Cseresnyés",
-        "affiliations-list" : [ ],
-        "affiliations-list-v2" : [ {
-          "name" : "Applied Systems Biology, Leibniz Institute for Natural Product Research and Infection Biology – Hans-Knöll-Institute, Jena, Germany",
-          "ror" : "https://ror.org/055s37c97",
-          "website" : "https://www.leibniz-hki.de"
-        } ],
-        "website" : "https://www.leibniz-hki.de/en/staff-details.html?member=144",
-        "contact" : null,
-        "email" : "zoltan.cseresnyes@leibniz-hki.de",
-        "first-author" : true,
-        "corresponding-author" : false,
-        "orcid" : "https://orcid.org/0000-0002-6574-2588",
-        "custom-text" : "<html><head></head><body></body></html>"
-      }, {
-        "title" : "",
-        "first-name" : "Ruman",
-        "last-name" : "Gerst",
-        "affiliations-list" : [ ],
-        "affiliations-list-v2" : [ {
-          "name" : "Applied Systems Biology, Leibniz Institute for Natural Product Research and Infection Biology – Hans-Knöll-Institute, Jena, Germany",
-          "ror" : "https://ror.org/055s37c97",
-          "website" : "https://www.leibniz-hki.de"
-        }, {
-          "name" : "Faculty of Biological Sciences, Friedrich Schiller University Jena, Germany",
-          "ror" : "https://ror.org/05qpz1x62",
-          "website" : "https://www.uni-jena.de"
-        } ],
-        "website" : "https://www.leibniz-hki.de/en/staff-details.html?member=1027",
-        "contact" : null,
-        "email" : "ruman.gerst@leibniz-hki.de",
-        "first-author" : true,
-        "corresponding-author" : false,
-        "orcid" : "https://orcid.org/0000-0002-0723-6038",
-        "custom-text" : "<html><head></head><body></body></html>"
-      }, {
-        "title" : "Prof. Dr.",
-        "first-name" : "Marc Thilo",
-        "last-name" : "Figge",
-        "affiliations-list" : [ ],
-        "affiliations-list-v2" : [ {
-          "name" : "Applied Systems Biology, Leibniz Institute for Natural Product Research and Infection Biology – Hans-Knöll-Institute, Jena, Germany",
-          "ror" : "https://ror.org/055s37c97",
-          "website" : "https://www.leibniz-hki.de"
-        }, {
-          "name" : "Institute of Microbiology, Faculty of Biological Sciences, Friedrich Schiller University Jena, Germany",
-          "ror" : "https://ror.org/05qpz1x62",
-          "website" : "https://www.uni-jena.de/mikrobiologie"
-        } ],
-        "website" : "https://www.leibniz-hki.de/en/staff-details.html?member=81",
-        "contact" : null,
-        "email" : "thilo.figge@leibniz-hki.de",
-        "first-author" : false,
-        "corresponding-author" : true,
-        "orcid" : "https://orcid.org/0000-0002-4044-9166",
-        "custom-text" : "<html><head></head><body></body></html>"
-      } ],
-      "acknowledgements" : [ ],
-      "website" : "https://www.jipipe.org/",
-      "license" : "MIT",
-      "citation" : "Gerst, R., Cseresnyés, Z. & Figge, M.T. JIPipe: visual batch processing for ImageJ. Nat Methods (2023). https://doi.org/10.1038/s41592-022-01744-4",
-      "dependency-citations" : [ ],
-      "categories" : [ "Automation", "Annotation", "Filtering" ]
-    },
-    "id" : "org.hkijena.jipipe:filesystem",
-    "version" : "6.0.0",
-    "provides" : [ ],
-    "ij:update-site-dependencies" : [ ],
-    "dependencies" : [ ],
-    "ij:update-site-providers" : [ ]
-  }, {
-    "metadata" : {
-      "name" : "Compartment management",
-      "description" : "<html><head></head><body>Data types required for graph compartment management</body></html>",
-      "summary" : "<html><head></head><body>Data types required for graph compartment management</body></html>",
-      "authors" : [ {
-        "title" : "Dr.",
-        "first-name" : "Zoltán",
-        "last-name" : "Cseresnyés",
-        "affiliations-list" : [ ],
-        "affiliations-list-v2" : [ {
-          "name" : "Applied Systems Biology, Leibniz Institute for Natural Product Research and Infection Biology – Hans-Knöll-Institute, Jena, Germany",
-          "ror" : "https://ror.org/055s37c97",
-          "website" : "https://www.leibniz-hki.de"
-        } ],
-        "website" : "https://www.leibniz-hki.de/en/staff-details.html?member=144",
-        "contact" : null,
-        "email" : "zoltan.cseresnyes@leibniz-hki.de",
-        "first-author" : true,
-        "corresponding-author" : false,
-        "orcid" : "https://orcid.org/0000-0002-6574-2588",
-        "custom-text" : "<html><head></head><body></body></html>"
-      }, {
-        "title" : "",
-        "first-name" : "Ruman",
-        "last-name" : "Gerst",
-        "affiliations-list" : [ ],
-        "affiliations-list-v2" : [ {
-          "name" : "Applied Systems Biology, Leibniz Institute for Natural Product Research and Infection Biology – Hans-Knöll-Institute, Jena, Germany",
-          "ror" : "https://ror.org/055s37c97",
-          "website" : "https://www.leibniz-hki.de"
-        }, {
-          "name" : "Faculty of Biological Sciences, Friedrich Schiller University Jena, Germany",
-          "ror" : "https://ror.org/05qpz1x62",
-          "website" : "https://www.uni-jena.de"
-        } ],
-        "website" : "https://www.leibniz-hki.de/en/staff-details.html?member=1027",
-        "contact" : null,
-        "email" : "ruman.gerst@leibniz-hki.de",
-        "first-author" : true,
-        "corresponding-author" : false,
-        "orcid" : "https://orcid.org/0000-0002-0723-6038",
-        "custom-text" : "<html><head></head><body></body></html>"
-      }, {
-        "title" : "Prof. Dr.",
-        "first-name" : "Marc Thilo",
-        "last-name" : "Figge",
-        "affiliations-list" : [ ],
-        "affiliations-list-v2" : [ {
-          "name" : "Applied Systems Biology, Leibniz Institute for Natural Product Research and Infection Biology – Hans-Knöll-Institute, Jena, Germany",
-          "ror" : "https://ror.org/055s37c97",
-          "website" : "https://www.leibniz-hki.de"
-        }, {
-          "name" : "Institute of Microbiology, Faculty of Biological Sciences, Friedrich Schiller University Jena, Germany",
-          "ror" : "https://ror.org/05qpz1x62",
-          "website" : "https://www.uni-jena.de/mikrobiologie"
-        } ],
-        "website" : "https://www.leibniz-hki.de/en/staff-details.html?member=81",
-        "contact" : null,
-        "email" : "thilo.figge@leibniz-hki.de",
-        "first-author" : false,
-        "corresponding-author" : true,
-        "orcid" : "https://orcid.org/0000-0002-4044-9166",
-        "custom-text" : "<html><head></head><body></body></html>"
-      } ],
-      "acknowledgements" : [ ],
-      "website" : "https://www.jipipe.org/",
-      "license" : "MIT",
-      "citation" : "Gerst, R., Cseresnyés, Z. & Figge, M.T. JIPipe: visual batch processing for ImageJ. Nat Methods (2023). https://doi.org/10.1038/s41592-022-01744-4",
-      "dependency-citations" : [ ],
-      "categories" : [ "Core" ]
-    },
-    "id" : "org.hkijena.jipipe:compartments",
-    "version" : "6.0.0",
-    "provides" : [ ],
-    "ij:update-site-dependencies" : [ ],
-    "dependencies" : [ ],
-    "ij:update-site-providers" : [ ]
-  }, {
-    "metadata" : {
       "name" : "Annotation data types and algorithms",
       "description" : "<html><head></head><body>Provides data types and algorithms to modify data annotations</body></html>",
       "summary" : "<html><head></head><body>Provides data types and algorithms to modify data annotations</body></html>",
@@ -1056,6 +940,530 @@
       "categories" : [ "Annotation" ]
     },
     "id" : "org.hkijena.jipipe:annotations",
+    "version" : "6.0.0",
+    "provides" : [ ],
+    "ij:update-site-dependencies" : [ ],
+    "dependencies" : [ ],
+    "ij:update-site-providers" : [ ]
+  }, {
+    "metadata" : {
+      "name" : "ImageJ integration",
+      "description" : "<html><head></head><body>Adds support for commonly used ImageJ data types</body></html>",
+      "summary" : "<html><head></head><body>Adds support for commonly used ImageJ data types</body></html>",
+      "authors" : [ {
+        "title" : "Dr.",
+        "first-name" : "Zoltán",
+        "last-name" : "Cseresnyés",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Applied Systems Biology, Leibniz Institute for Natural Product Research and Infection Biology – Hans-Knöll-Institute, Jena, Germany",
+          "ror" : "https://ror.org/055s37c97",
+          "website" : "https://www.leibniz-hki.de"
+        } ],
+        "website" : "https://www.leibniz-hki.de/en/staff-details.html?member=144",
+        "contact" : null,
+        "email" : "zoltan.cseresnyes@leibniz-hki.de",
+        "first-author" : true,
+        "corresponding-author" : false,
+        "orcid" : "https://orcid.org/0000-0002-6574-2588",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : "",
+        "first-name" : "Ruman",
+        "last-name" : "Gerst",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Applied Systems Biology, Leibniz Institute for Natural Product Research and Infection Biology – Hans-Knöll-Institute, Jena, Germany",
+          "ror" : "https://ror.org/055s37c97",
+          "website" : "https://www.leibniz-hki.de"
+        }, {
+          "name" : "Faculty of Biological Sciences, Friedrich Schiller University Jena, Germany",
+          "ror" : "https://ror.org/05qpz1x62",
+          "website" : "https://www.uni-jena.de"
+        } ],
+        "website" : "https://www.leibniz-hki.de/en/staff-details.html?member=1027",
+        "contact" : null,
+        "email" : "ruman.gerst@leibniz-hki.de",
+        "first-author" : true,
+        "corresponding-author" : false,
+        "orcid" : "https://orcid.org/0000-0002-0723-6038",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : "Prof. Dr.",
+        "first-name" : "Marc Thilo",
+        "last-name" : "Figge",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Applied Systems Biology, Leibniz Institute for Natural Product Research and Infection Biology – Hans-Knöll-Institute, Jena, Germany",
+          "ror" : "https://ror.org/055s37c97",
+          "website" : "https://www.leibniz-hki.de"
+        }, {
+          "name" : "Institute of Microbiology, Faculty of Biological Sciences, Friedrich Schiller University Jena, Germany",
+          "ror" : "https://ror.org/05qpz1x62",
+          "website" : "https://www.uni-jena.de/mikrobiologie"
+        } ],
+        "website" : "https://www.leibniz-hki.de/en/staff-details.html?member=81",
+        "contact" : null,
+        "email" : "thilo.figge@leibniz-hki.de",
+        "first-author" : false,
+        "corresponding-author" : true,
+        "orcid" : "https://orcid.org/0000-0002-4044-9166",
+        "custom-text" : "<html><head></head><body></body></html>"
+      } ],
+      "acknowledgements" : [ {
+        "title" : null,
+        "first-name" : "Curtis T.",
+        "last-name" : "Rueden",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Laboratory for Optical and Computational Instrumentation, University of Wisconsin at Madison, Madison, Wisconsin, USA",
+          "ror" : "https://ror.org/01y2jtd41",
+          "website" : "https://loci.wisc.edu"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : true,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Johannes",
+        "last-name" : "Schindelin",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Laboratory for Optical and Computational Instrumentation, University of Wisconsin at Madison, Madison, Wisconsin, USA",
+          "ror" : "https://ror.org/01y2jtd41",
+          "website" : "https://loci.wisc.edu"
+        }, {
+          "name" : "Morgridge Institute for Research, Madison, Wisconsin, USA",
+          "ror" : "https://ror.org/05cb4rb43",
+          "website" : "https://morgridge.org"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Mark C.",
+        "last-name" : "Hiner",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Laboratory for Optical and Computational Instrumentation, University of Wisconsin at Madison, Madison, Wisconsin, USA",
+          "ror" : "https://ror.org/01y2jtd41",
+          "website" : "https://loci.wisc.edu"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Barry E.",
+        "last-name" : "DeZonia",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Laboratory for Optical and Computational Instrumentation, University of Wisconsin at Madison, Madison, Wisconsin, USA",
+          "ror" : "https://ror.org/01y2jtd41",
+          "website" : "https://loci.wisc.edu"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Alison E.",
+        "last-name" : "Walter",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Laboratory for Optical and Computational Instrumentation, University of Wisconsin at Madison, Madison, Wisconsin, USA",
+          "ror" : "https://ror.org/01y2jtd41",
+          "website" : "https://loci.wisc.edu"
+        }, {
+          "name" : "Morgridge Institute for Research, Madison, Wisconsin, USA",
+          "ror" : "https://ror.org/05cb4rb43",
+          "website" : "https://morgridge.org"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Ellen T.",
+        "last-name" : "Arena",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Laboratory for Optical and Computational Instrumentation, University of Wisconsin at Madison, Madison, Wisconsin, USA",
+          "ror" : "https://ror.org/01y2jtd41",
+          "website" : "https://loci.wisc.edu"
+        }, {
+          "name" : "Morgridge Institute for Research, Madison, Wisconsin, USA",
+          "ror" : "https://ror.org/05cb4rb43",
+          "website" : "https://morgridge.org"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Kevin W.",
+        "last-name" : "Eliceiri",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Laboratory for Optical and Computational Instrumentation, University of Wisconsin at Madison, Madison, Wisconsin, USA",
+          "ror" : "https://ror.org/01y2jtd41",
+          "website" : "https://loci.wisc.edu"
+        }, {
+          "name" : "Morgridge Institute for Research, Madison, Wisconsin, USA",
+          "ror" : "https://ror.org/05cb4rb43",
+          "website" : "https://morgridge.org"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : true,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Caroline A.",
+        "last-name" : "Schneider",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Laboratory for Optical and Computational Instrumentation, University of Wisconsin at Madison, Madison, Wisconsin, USA",
+          "ror" : "https://ror.org/01y2jtd41",
+          "website" : "https://loci.wisc.edu"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : true,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Wayne S.",
+        "last-name" : "Rasband",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Section on Instrumentation, US National Institutes of Health, Bethesda, Maryland, USA",
+          "ror" : "https://ror.org/01cwqze88",
+          "website" : "https://www.nih.gov"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Melissa",
+        "last-name" : "Linkert",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Laboratory for Optical and Computational Instrumentation, Department of Molecular Biology",
+          "ror" : null,
+          "website" : null
+        }, {
+          "name" : "Department of Biomedical Engineering, Graduate School, University of Wisconsin at Madison, Madison, WI 53711",
+          "ror" : null,
+          "website" : null
+        }, {
+          "name" : "Glencoe Software, Inc., Seattle, WA 98101",
+          "ror" : null,
+          "website" : "https://glencoesoftware.com"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : true,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Chris",
+        "last-name" : "Allan",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Wellcome Trust Centre for Gene Regulation and Expression, College of Life Sciences, University of Dundee, Dundee, Scotland, UK",
+          "ror" : "https://ror.org/03h2bxq36",
+          "website" : "https://www.dundee.ac.uk/"
+        }, {
+          "name" : "Glencoe Software, Inc., Seattle, WA 98101",
+          "ror" : null,
+          "website" : "https://glencoesoftware.com"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Jean-Marie",
+        "last-name" : "Burel",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Wellcome Trust Centre for Gene Regulation and Expression, College of Life Sciences, University of Dundee, Dundee, Scotland, UK",
+          "ror" : "https://ror.org/03h2bxq36",
+          "website" : "https://www.dundee.ac.uk/"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Will",
+        "last-name" : "Moore",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Wellcome Trust Centre for Gene Regulation and Expression, College of Life Sciences, University of Dundee, Dundee, Scotland, UK",
+          "ror" : "https://ror.org/03h2bxq36",
+          "website" : "https://www.dundee.ac.uk/"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Andrew",
+        "last-name" : "Patterson",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Wellcome Trust Centre for Gene Regulation and Expression, College of Life Sciences, University of Dundee, Dundee, Scotland, UK",
+          "ror" : "https://ror.org/03h2bxq36",
+          "website" : "https://www.dundee.ac.uk/"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Brian",
+        "last-name" : "Loranger",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Wellcome Trust Centre for Gene Regulation and Expression, College of Life Sciences, University of Dundee, Dundee, Scotland, UK",
+          "ror" : "https://ror.org/03h2bxq36",
+          "website" : "https://www.dundee.ac.uk/"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Josh",
+        "last-name" : "Moore",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Glencoe Software, Inc., Seattle, WA 98101",
+          "ror" : null,
+          "website" : "https://glencoesoftware.com"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Carlos",
+        "last-name" : "Neves",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Glencoe Software, Inc., Seattle, WA 98101",
+          "ror" : null,
+          "website" : "https://glencoesoftware.com"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Donald",
+        "last-name" : "MacDonald",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Wellcome Trust Centre for Gene Regulation and Expression, College of Life Sciences, University of Dundee, Dundee, Scotland, UK",
+          "ror" : "https://ror.org/03h2bxq36",
+          "website" : "https://www.dundee.ac.uk/"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Aleksandra",
+        "last-name" : "Tarkowska",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Wellcome Trust Centre for Gene Regulation and Expression, College of Life Sciences, University of Dundee, Dundee, Scotland, UK",
+          "ror" : "https://ror.org/03h2bxq36",
+          "website" : "https://www.dundee.ac.uk/"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Caitlin",
+        "last-name" : "Sticco",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Laboratory for Optical and Computational Instrumentation, Department of Molecular Biology",
+          "ror" : null,
+          "website" : null
+        }, {
+          "name" : "Department of Biomedical Engineering, Graduate School, University of Wisconsin at Madison, Madison, WI 53711",
+          "ror" : null,
+          "website" : null
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Emma",
+        "last-name" : "Hill",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "The Rockefeller University Press, New York, NY 10065",
+          "ror" : null,
+          "website" : "https://rupress.org"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Mike",
+        "last-name" : "Rossner",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "The Rockefeller University Press, New York, NY 10065",
+          "ror" : null,
+          "website" : "https://rupress.org"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : false,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      }, {
+        "title" : null,
+        "first-name" : "Jason R.",
+        "last-name" : "Swedlow",
+        "affiliations-list" : [ ],
+        "affiliations-list-v2" : [ {
+          "name" : "Wellcome Trust Centre for Gene Regulation and Expression, College of Life Sciences, University of Dundee, Dundee, Scotland, UK",
+          "ror" : "https://ror.org/03h2bxq36",
+          "website" : "https://www.dundee.ac.uk/"
+        }, {
+          "name" : "Glencoe Software, Inc., Seattle, WA 98101",
+          "ror" : null,
+          "website" : "https://glencoesoftware.com"
+        } ],
+        "website" : null,
+        "contact" : null,
+        "email" : null,
+        "first-author" : false,
+        "corresponding-author" : true,
+        "orcid" : "",
+        "custom-text" : "<html><head></head><body></body></html>"
+      } ],
+      "website" : "https://www.jipipe.org/",
+      "license" : "MIT",
+      "citation" : "Gerst, R., Cseresnyés, Z. & Figge, M.T. JIPipe: visual batch processing for ImageJ. Nat Methods (2023). https://doi.org/10.1038/s41592-022-01744-4",
+      "dependency-citations" : [ "Rueden, C. T.; Schindelin, J. & Hiner, M. C. et al. (2017), \"ImageJ2: ImageJ for the next generation of scientific image data\", BMC Bioinformatics 18:529", "Schneider, C. A.; Rasband, W. S. & Eliceiri, K. W. (2012), \"NIH Image to ImageJ: 25 years of image analysis\", Nature methods 9(7): 671-675", "Melissa Linkert, Curtis T. Rueden, Chris Allan, Jean-Marie Burel, Will Moore, Andrew Patterson, Brian Loranger, Josh Moore, Carlos Neves, Donald MacDonald, Aleksandra Tarkowska, Caitlin Sticco, Emma Hill, Mike Rossner, Kevin W. Eliceiri, and Jason R. Swedlow (2010) Metadata matters: access to image data in the real world. The Journal of Cell Biology 189(5), 777-782" ],
+      "categories" : [ "Import-Export", "Image Annotation", "OME" ]
+    },
+    "id" : "org.hkijena.jipipe:imagej-integration",
+    "version" : "6.0.0",
+    "provides" : [ ],
+    "ij:update-site-dependencies" : [ ],
+    "dependencies" : [ ],
+    "ij:update-site-providers" : [ ]
+  }, {
+    "metadata" : {
+      "name" : "Standard table operations",
+      "description" : "<html><head></head><body>A JIPipe project</body></html>",
+      "summary" : "<html><head></head><body></body></html>",
+      "authors" : [ ],
+      "acknowledgements" : [ ],
+      "website" : "",
+      "license" : "",
+      "citation" : "",
+      "dependency-citations" : [ ],
+      "categories" : [ ]
+    },
+    "id" : "org.hkijena.jipipe:table-operations",
     "version" : "6.0.0",
     "provides" : [ ],
     "ij:update-site-dependencies" : [ ],
@@ -1881,9 +2289,9 @@
     "ij:update-site-providers" : [ ]
   }, {
     "metadata" : {
-      "name" : "Utilities",
-      "description" : "<html><head></head><body>Utility algorithms</body></html>",
-      "summary" : "<html><head></head><body>Utility algorithms</body></html>",
+      "name" : "Multi parameter algorithms",
+      "description" : "<html><head></head><body>Extension that provides capabilities to run multiple parameters</body></html>",
+      "summary" : "<html><head></head><body>Extension that provides capabilities to run multiple parameters</body></html>",
       "authors" : [ {
         "title" : "Dr.",
         "first-name" : "Zoltán",
@@ -1949,9 +2357,9 @@
       "license" : "MIT",
       "citation" : "Gerst, R., Cseresnyés, Z. & Figge, M.T. JIPipe: visual batch processing for ImageJ. Nat Methods (2023). https://doi.org/10.1038/s41592-022-01744-4",
       "dependency-citations" : [ ],
-      "categories" : [ "Data processing", "Scripting" ]
+      "categories" : [ "Core", "Scripting" ]
     },
-    "id" : "org.hkijena.jipipe:utils",
+    "id" : "org.hkijena.jipipe:multi-parameters-algorithms",
     "version" : "6.0.0",
     "provides" : [ ],
     "ij:update-site-dependencies" : [ ],
@@ -1959,7 +2367,7 @@
     "ij:update-site-providers" : [ ]
   }, {
     "metadata" : {
-      "name" : "ImageJ integration",
+      "name" : "Forms",
       "description" : "<html><head></head><body>A JIPipe project</body></html>",
       "summary" : "<html><head></head><body></body></html>",
       "authors" : [ ],
@@ -1970,7 +2378,45 @@
       "dependency-citations" : [ ],
       "categories" : [ ]
     },
-    "id" : "org.hkijena.jipipe:imagej-integration",
+    "id" : "org.hkijena.jipipe:forms",
+    "version" : "6.0.0",
+    "provides" : [ ],
+    "ij:update-site-dependencies" : [ ],
+    "dependencies" : [ ],
+    "ij:update-site-providers" : [ ]
+  }, {
+    "metadata" : {
+      "name" : "Strings",
+      "description" : "<html><head></head><body>A JIPipe project</body></html>",
+      "summary" : "<html><head></head><body></body></html>",
+      "authors" : [ ],
+      "acknowledgements" : [ ],
+      "website" : "",
+      "license" : "",
+      "citation" : "",
+      "dependency-citations" : [ ],
+      "categories" : [ ]
+    },
+    "id" : "org.hkijena.jipipe:strings",
+    "version" : "6.0.0",
+    "provides" : [ ],
+    "ij:update-site-dependencies" : [ ],
+    "dependencies" : [ ],
+    "ij:update-site-providers" : [ ]
+  }, {
+    "metadata" : {
+      "name" : "Filesystem types and algorithms",
+      "description" : "<html><head></head><body>A JIPipe project</body></html>",
+      "summary" : "<html><head></head><body></body></html>",
+      "authors" : [ ],
+      "acknowledgements" : [ ],
+      "website" : "",
+      "license" : "",
+      "citation" : "",
+      "dependency-citations" : [ ],
+      "categories" : [ ]
+    },
+    "id" : "org.hkijena.jipipe:filesystem",
     "version" : "6.0.0",
     "provides" : [ ],
     "ij:update-site-dependencies" : [ ],
@@ -14662,8 +15108,8 @@
           "arguments" : {
             "expression" : "ARRAY(script_file)"
           },
-          "r-executable-path" : "",
-          "rscript-executable-path" : ""
+          "rscript-executable-path" : "",
+          "r-executable-path" : ""
         },
         "enabled" : true
       },
@@ -14823,8 +15269,8 @@
     "org.hkijena.jipipe.ui:project-tabs" : {
       "jipipe:type" : "jipipe:desktop:project-tabs",
       "data" : {
-        "open-tabs" : [ "singleton:PROJECT_OVERVIEW", "singleton:INTRODUCTION", "singleton:COMPARTMENT_EDITOR", "graph-compartment:999c9b80-1dfc-453a-b7c1-d9fabe699cfb", "graph-compartment:c6d5c5ef-c1d5-4ee1-9d93-76c60bdf7211", "graph-compartment:6854939d-0900-4a58-ad81-291632fcd924", "graph-compartment:7950851b-ccdb-446f-961f-3cc28fe8814d", "graph-compartment:dcaae8b0-9395-4c30-a425-c4164628f4df", "graph-compartment:046e2ba3-248c-48a8-b548-af1e95ec379b" ],
-        "selected-tab" : "graph-compartment:dcaae8b0-9395-4c30-a425-c4164628f4df"
+        "open-tabs" : [ "singleton:PROJECT_OVERVIEW" ],
+        "selected-tab" : "singleton:PROJECT_OVERVIEW"
       }
     }
   },
@@ -15186,8 +15632,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -15900,8 +16346,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -15993,8 +16439,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -16070,8 +16516,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -16137,8 +16583,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -16218,8 +16664,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -16375,8 +16821,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -16537,8 +16983,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -16632,8 +17078,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -16713,8 +17159,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -16796,8 +17242,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -16877,8 +17323,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -16994,8 +17440,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "output-from-imagej-importers/Output" : {
           "id" : "imagej-window-to-imgplus",
@@ -17114,8 +17560,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -17259,8 +17705,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -17340,8 +17786,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -17418,8 +17864,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -17511,8 +17957,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -17592,8 +18038,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -17647,10 +18093,10 @@
           "location/999c9b80-1dfc-453a-b7c1-d9fabe699cfb/y" : 29
         },
         "jipipe:node-info-id" : "annotate-filter-by-annotation",
+        "enable-filter" : true,
         "filter" : {
           "expression" : "InputMode EQUALS \"stitched\""
         },
-        "enable-filter" : true,
         "jipipe:algorithm:enabled" : true,
         "jipipe:node:ui-locked" : false,
         "jipipe:node:bookmarked" : false,
@@ -17703,10 +18149,10 @@
           "location/999c9b80-1dfc-453a-b7c1-d9fabe699cfb/y" : 29
         },
         "jipipe:node-info-id" : "annotate-filter-by-annotation",
+        "enable-filter" : true,
         "filter" : {
           "expression" : "InputMode EQUALS \"unstitched\""
         },
-        "enable-filter" : true,
         "jipipe:algorithm:enabled" : true,
         "jipipe:node:ui-locked" : false,
         "jipipe:node:bookmarked" : false,
@@ -17797,8 +18243,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:data-batch-generation/limit" : {
           "content" : {
@@ -17886,8 +18332,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -17967,8 +18413,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -18048,8 +18494,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -18158,8 +18604,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "output-from-imagej-importers/Output" : {
           "id" : "imagej-window-to-imgplus",
@@ -18291,8 +18737,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "output-from-imagej-importers/Output" : {
           "id" : "imagej-window-to-imgplus",
@@ -18395,8 +18841,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -18486,8 +18932,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -18564,8 +19010,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -18653,8 +19099,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -18810,8 +19256,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -18951,8 +19397,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -19126,8 +19572,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -19245,8 +19691,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "output-from-imagej-importers/Output" : {
           "id" : "imagej-window-to-imgplus",
@@ -19351,8 +19797,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -19429,8 +19875,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -19546,8 +19992,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "output-from-imagej-importers/Output" : {
           "id" : "imagej-window-to-imgplus",
@@ -19661,8 +20107,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -19790,8 +20236,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -19937,8 +20383,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -20038,7 +20484,7 @@
         "max-particle-circularity" : 1.0,
         "exclude-edges" : false,
         "measurements" : {
-          "values" : [ "ShapeDescriptors", "StackPosition", "Area", "PixelValueMedian", "PixelValueSkewness", "PixelValueStandardDeviation", "PixelValueModal", "FeretDiameter", "Centroid", "FitEllipse", "Perimeter", "IntegratedDensity", "AreaFraction", "PixelValueMean", "CenterOfMass", "PixelValueMinMax", "BoundingRectangle", "PixelValueKurtosis" ],
+          "values" : [ "PixelValueModal", "PixelValueKurtosis", "PixelValueMinMax", "PixelValueSkewness", "FitEllipse", "StackPosition", "Area", "AreaFraction", "PixelValueMean", "IntegratedDensity", "FeretDiameter", "PixelValueStandardDeviation", "ShapeDescriptors", "BoundingRectangle", "Centroid", "PixelValueMedian", "CenterOfMass", "Perimeter" ],
           "collapsed" : true
         },
         "jipipe:algorithm:enabled" : true,
@@ -20052,8 +20498,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:data-batch-generation/limit" : {
           "content" : {
@@ -20138,8 +20584,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -20288,8 +20734,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "output-from-imagej-importers/Output" : {
           "id" : "imagej-window-to-imgplus",
@@ -20416,8 +20862,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -20595,8 +21041,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -20701,8 +21147,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -20778,8 +21224,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:algorithm:custom-expression-variables" : {
           "parameters" : { }
@@ -20934,8 +21380,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -21186,8 +21632,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -21315,8 +21761,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "output-from-imagej-importers/Output" : {
           "id" : "imagej-window-to-imgplus",
@@ -21531,8 +21977,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -21702,8 +22148,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -21786,8 +22232,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -21856,8 +22302,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -22066,8 +22512,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "output-from-imagej-importers/Output" : {
           "id" : "imagej-window-to-imgplus",
@@ -22173,8 +22619,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -22257,8 +22703,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -22341,8 +22787,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -22508,8 +22954,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -22658,8 +23104,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -22780,8 +23226,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "output-from-imagej-importers/Output" : {
           "id" : "imagej-window-to-imgplus",
@@ -23015,8 +23461,8 @@
               "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
               "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
               "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-              "jipipe:adaptive-parameters/enabled" : true,
               "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+              "jipipe:adaptive-parameters/enabled" : true,
               "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
               "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
               "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -23068,10 +23514,10 @@
                 "location/_/x" : 10
               },
               "jipipe:node-info-id" : "annotate-filter-by-annotation",
+              "enable-filter" : true,
               "filter" : {
                 "expression" : "#uid == \"Data [0]\""
               },
-              "enable-filter" : true,
               "jipipe:algorithm:enabled" : true,
               "jipipe:node:ui-locked" : false,
               "jipipe:node:bookmarked" : false,
@@ -23197,8 +23643,8 @@
               "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
               "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
               "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-              "jipipe:adaptive-parameters/enabled" : true,
               "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+              "jipipe:adaptive-parameters/enabled" : true,
               "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
               "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
               "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -23250,10 +23696,10 @@
                 "location/_/x" : 28
               },
               "jipipe:node-info-id" : "annotate-filter-by-annotation",
+              "enable-filter" : true,
               "filter" : {
                 "expression" : "#FILE == \"negative control\""
               },
-              "enable-filter" : true,
               "jipipe:algorithm:enabled" : true,
               "jipipe:node:ui-locked" : false,
               "jipipe:node:bookmarked" : false,
@@ -23396,8 +23842,8 @@
               "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
               "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
               "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-              "jipipe:adaptive-parameters/enabled" : true,
               "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+              "jipipe:adaptive-parameters/enabled" : true,
               "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
               "script-parameters" : {
                 "parameters" : { }
@@ -23489,8 +23935,8 @@
               "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
               "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
               "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-              "jipipe:adaptive-parameters/enabled" : true,
               "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+              "jipipe:adaptive-parameters/enabled" : true,
               "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
               "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
               "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -23634,8 +24080,8 @@
               "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
               "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
               "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-              "jipipe:adaptive-parameters/enabled" : true,
               "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+              "jipipe:adaptive-parameters/enabled" : true,
               "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
               "script-parameters" : {
                 "parameters" : { }
@@ -23727,8 +24173,8 @@
               "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
               "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
               "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-              "jipipe:adaptive-parameters/enabled" : true,
               "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+              "jipipe:adaptive-parameters/enabled" : true,
               "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
               "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
               "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -23780,10 +24226,10 @@
                 "location/_/x" : 18
               },
               "jipipe:node-info-id" : "annotate-filter-by-annotation",
+              "enable-filter" : true,
               "filter" : {
                 "expression" : "#uid == \"Data [0]\""
               },
-              "enable-filter" : true,
               "jipipe:algorithm:enabled" : true,
               "jipipe:node:ui-locked" : false,
               "jipipe:node:bookmarked" : false,
@@ -23834,10 +24280,10 @@
                 "location/_/x" : 36
               },
               "jipipe:node-info-id" : "annotate-filter-by-annotation",
+              "enable-filter" : true,
               "filter" : {
                 "expression" : "#FILE == \"negative control\""
               },
-              "enable-filter" : true,
               "jipipe:algorithm:enabled" : true,
               "jipipe:node:ui-locked" : false,
               "jipipe:node:bookmarked" : false,
@@ -23888,10 +24334,10 @@
                 "location/_/x" : 10
               },
               "jipipe:node-info-id" : "annotate-filter-by-annotation",
+              "enable-filter" : true,
               "filter" : {
                 "expression" : "#FILE != \"negative control\""
               },
-              "enable-filter" : true,
               "jipipe:algorithm:enabled" : true,
               "jipipe:node:ui-locked" : false,
               "jipipe:node:bookmarked" : false,
@@ -23942,10 +24388,10 @@
                 "location/_/x" : 18
               },
               "jipipe:node-info-id" : "annotate-filter-by-annotation",
+              "enable-filter" : true,
               "filter" : {
                 "expression" : "#FILE != \"negative control\""
               },
-              "enable-filter" : true,
               "jipipe:algorithm:enabled" : true,
               "jipipe:node:ui-locked" : false,
               "jipipe:node:bookmarked" : false,
@@ -23996,10 +24442,10 @@
                 "location/_/x" : 28
               },
               "jipipe:node-info-id" : "annotate-filter-by-annotation",
+              "enable-filter" : true,
               "filter" : {
                 "expression" : "#uid == \"Data [0]\""
               },
-              "enable-filter" : true,
               "jipipe:algorithm:enabled" : true,
               "jipipe:node:ui-locked" : false,
               "jipipe:node:bookmarked" : false,
@@ -24050,10 +24496,10 @@
                 "location/_/x" : 36
               },
               "jipipe:node-info-id" : "annotate-filter-by-annotation",
+              "enable-filter" : true,
               "filter" : {
                 "expression" : "#uid == \"Data [0]\""
               },
-              "enable-filter" : true,
               "jipipe:algorithm:enabled" : true,
               "jipipe:node:ui-locked" : false,
               "jipipe:node:bookmarked" : false,
@@ -24249,8 +24695,8 @@
               "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
               "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
               "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-              "jipipe:adaptive-parameters/enabled" : true,
               "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+              "jipipe:adaptive-parameters/enabled" : true,
               "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
               "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
               "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -24270,52 +24716,12 @@
             }
           },
           "edges" : [ {
-            "source-node" : "329fdbd9-96d1-48ba-820c-f4166497b97a",
-            "target-node" : "46b1a228-a80e-4eb5-8be4-631785f4be3a",
-            "source-slot" : "Data",
+            "source-node" : "e698f5e2-f589-4514-a1e4-716b28c826dd",
+            "target-node" : "dc638e50-23eb-4155-99be-7cf51259e8fc",
+            "source-slot" : "Annotated data",
             "target-slot" : "Input",
             "metadata" : {
-              "uuid" : "ffb43595-07b2-43e0-8c2e-8546615c1e8a",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
-            "source-node" : "686b8f54-14df-4358-bb14-aeecbe6a6acb",
-            "target-node" : "0862e272-b9e0-430a-8065-8ced6e89518f",
-            "source-slot" : "Output",
-            "target-slot" : "Input 1",
-            "metadata" : {
-              "uuid" : "94c2ae63-7b72-4730-8632-db77285d6a7e",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
-            "source-node" : "4266c986-d618-44b8-b209-02a085643e6b",
-            "target-node" : "329fdbd9-96d1-48ba-820c-f4166497b97a",
-            "source-slot" : "IO Interface Data 1",
-            "target-slot" : "Data 1",
-            "metadata" : {
-              "uuid" : "b7a74e7b-87bb-4a8c-8087-988817738c76",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
-            "source-node" : "b683d875-e2dc-4e73-955e-ea7eab489d79",
-            "target-node" : "0862e272-b9e0-430a-8065-8ced6e89518f",
-            "source-slot" : "Output",
-            "target-slot" : "Input",
-            "metadata" : {
-              "uuid" : "769cabc9-d3a2-487f-ac5f-6d6f46514fff",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
-            "source-node" : "1368ab41-aa11-430b-acc0-f95bb11529ca",
-            "target-node" : "c539390c-778f-4152-b934-06bc3c180790",
-            "source-slot" : "Output",
-            "target-slot" : "Input 1",
-            "metadata" : {
-              "uuid" : "e93361bb-f4ae-424c-b7e8-adce1d6716bd",
+              "uuid" : "34a232d8-a7e3-4fc3-8fb9-ffd2e800778f",
               "ui-shape" : "Elbow",
               "control-points" : { }
             }
@@ -24330,52 +24736,12 @@
               "control-points" : { }
             }
           }, {
-            "source-node" : "911ff1f3-e406-48d1-a6c4-02334210b9de",
-            "target-node" : "b8befd1a-2e61-4db5-8d35-49e63978ca20",
+            "source-node" : "329fdbd9-96d1-48ba-820c-f4166497b97a",
+            "target-node" : "46b1a228-a80e-4eb5-8be4-631785f4be3a",
             "source-slot" : "Data",
             "target-slot" : "Input",
             "metadata" : {
-              "uuid" : "a1ff6c21-0694-44ed-973c-157bb8e95dee",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
-            "source-node" : "85787ded-16a6-4066-882c-b3649f16bcaa",
-            "target-node" : "686b8f54-14df-4358-bb14-aeecbe6a6acb",
-            "source-slot" : "Annotated data",
-            "target-slot" : "Input",
-            "metadata" : {
-              "uuid" : "044a8a13-a20c-486b-a84d-6782e7f7d4b5",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
-            "source-node" : "4266c986-d618-44b8-b209-02a085643e6b",
-            "target-node" : "329fdbd9-96d1-48ba-820c-f4166497b97a",
-            "source-slot" : "IO Interface Data",
-            "target-slot" : "Data",
-            "metadata" : {
-              "uuid" : "871b2465-c94e-4956-b932-b2abd2d75ef4",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
-            "source-node" : "c539390c-778f-4152-b934-06bc3c180790",
-            "target-node" : "911ff1f3-e406-48d1-a6c4-02334210b9de",
-            "source-slot" : "Table",
-            "target-slot" : "Data",
-            "metadata" : {
-              "uuid" : "0897a4ed-75d0-4609-8eee-03d62265919e",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
-            "source-node" : "b8befd1a-2e61-4db5-8d35-49e63978ca20",
-            "target-node" : "e4d8b908-077f-4c20-99b1-7b6493f71838",
-            "source-slot" : "Output",
-            "target-slot" : "IO Interface Data",
-            "metadata" : {
-              "uuid" : "35675763-7fdc-41dc-b0e8-5d801af0e24e",
+              "uuid" : "ffb43595-07b2-43e0-8c2e-8546615c1e8a",
               "ui-shape" : "Elbow",
               "control-points" : { }
             }
@@ -24390,82 +24756,22 @@
               "control-points" : { }
             }
           }, {
-            "source-node" : "a795d42b-ff38-49f3-b4ea-d6df52c4cfbf",
-            "target-node" : "bdaf09d8-c249-4f7e-bd31-5a48f76ab79f",
-            "source-slot" : "Output",
-            "target-slot" : "Data",
-            "metadata" : {
-              "uuid" : "96de20c6-d898-4a92-9b55-4fe2b202bed7",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
-            "source-node" : "eee6a4ce-df3a-4d75-bc29-a7c6399befa8",
-            "target-node" : "1368ab41-aa11-430b-acc0-f95bb11529ca",
-            "source-slot" : "Annotated data",
-            "target-slot" : "Input",
-            "metadata" : {
-              "uuid" : "5e2b2cec-341b-4f51-a9dc-31b04d2812fa",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
-            "source-node" : "bdaf09d8-c249-4f7e-bd31-5a48f76ab79f",
-            "target-node" : "b683d875-e2dc-4e73-955e-ea7eab489d79",
-            "source-slot" : "Annotated data",
-            "target-slot" : "Input",
-            "metadata" : {
-              "uuid" : "1f92e279-7821-4eae-8f01-dbcf19c6ffa2",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
-            "source-node" : "75e6840d-7793-4ae0-9b0a-981f7d3e000d",
-            "target-node" : "eee6a4ce-df3a-4d75-bc29-a7c6399befa8",
-            "source-slot" : "Output",
-            "target-slot" : "Data",
-            "metadata" : {
-              "uuid" : "c868b25d-d68d-42e3-aa27-125ab7f76e28",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
-            "source-node" : "329fdbd9-96d1-48ba-820c-f4166497b97a",
-            "target-node" : "7e9dbc41-8e01-4c03-96be-dbc07fc08e0c",
-            "source-slot" : "Data 1",
-            "target-slot" : "Input",
-            "metadata" : {
-              "uuid" : "b8424448-c29b-4400-815b-bba9864eef66",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
-            "source-node" : "e698f5e2-f589-4514-a1e4-716b28c826dd",
-            "target-node" : "dc638e50-23eb-4155-99be-7cf51259e8fc",
-            "source-slot" : "Annotated data",
-            "target-slot" : "Input",
-            "metadata" : {
-              "uuid" : "34a232d8-a7e3-4fc3-8fb9-ffd2e800778f",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
-            "source-node" : "329fdbd9-96d1-48ba-820c-f4166497b97a",
-            "target-node" : "a795d42b-ff38-49f3-b4ea-d6df52c4cfbf",
-            "source-slot" : "Data 1",
-            "target-slot" : "Input",
-            "metadata" : {
-              "uuid" : "26cd7575-72b0-4e28-880d-c4e6f15a6ba0",
-              "ui-shape" : "Elbow",
-              "control-points" : { }
-            }
-          }, {
             "source-node" : "dc638e50-23eb-4155-99be-7cf51259e8fc",
             "target-node" : "c539390c-778f-4152-b934-06bc3c180790",
             "source-slot" : "Output",
             "target-slot" : "Input",
             "metadata" : {
               "uuid" : "2e44bf3f-24e7-42f8-a382-243c50185142",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
+            "source-node" : "4266c986-d618-44b8-b209-02a085643e6b",
+            "target-node" : "329fdbd9-96d1-48ba-820c-f4166497b97a",
+            "source-slot" : "IO Interface Data",
+            "target-slot" : "Data",
+            "metadata" : {
+              "uuid" : "871b2465-c94e-4956-b932-b2abd2d75ef4",
               "ui-shape" : "Elbow",
               "control-points" : { }
             }
@@ -24480,12 +24786,152 @@
               "control-points" : { }
             }
           }, {
+            "source-node" : "b8befd1a-2e61-4db5-8d35-49e63978ca20",
+            "target-node" : "e4d8b908-077f-4c20-99b1-7b6493f71838",
+            "source-slot" : "Output",
+            "target-slot" : "IO Interface Data",
+            "metadata" : {
+              "uuid" : "35675763-7fdc-41dc-b0e8-5d801af0e24e",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
+            "source-node" : "a795d42b-ff38-49f3-b4ea-d6df52c4cfbf",
+            "target-node" : "bdaf09d8-c249-4f7e-bd31-5a48f76ab79f",
+            "source-slot" : "Output",
+            "target-slot" : "Data",
+            "metadata" : {
+              "uuid" : "96de20c6-d898-4a92-9b55-4fe2b202bed7",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
+            "source-node" : "85787ded-16a6-4066-882c-b3649f16bcaa",
+            "target-node" : "686b8f54-14df-4358-bb14-aeecbe6a6acb",
+            "source-slot" : "Annotated data",
+            "target-slot" : "Input",
+            "metadata" : {
+              "uuid" : "044a8a13-a20c-486b-a84d-6782e7f7d4b5",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
+            "source-node" : "c539390c-778f-4152-b934-06bc3c180790",
+            "target-node" : "911ff1f3-e406-48d1-a6c4-02334210b9de",
+            "source-slot" : "Table",
+            "target-slot" : "Data",
+            "metadata" : {
+              "uuid" : "0897a4ed-75d0-4609-8eee-03d62265919e",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
+            "source-node" : "b683d875-e2dc-4e73-955e-ea7eab489d79",
+            "target-node" : "0862e272-b9e0-430a-8065-8ced6e89518f",
+            "source-slot" : "Output",
+            "target-slot" : "Input",
+            "metadata" : {
+              "uuid" : "769cabc9-d3a2-487f-ac5f-6d6f46514fff",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
+            "source-node" : "75e6840d-7793-4ae0-9b0a-981f7d3e000d",
+            "target-node" : "eee6a4ce-df3a-4d75-bc29-a7c6399befa8",
+            "source-slot" : "Output",
+            "target-slot" : "Data",
+            "metadata" : {
+              "uuid" : "c868b25d-d68d-42e3-aa27-125ab7f76e28",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
+            "source-node" : "eee6a4ce-df3a-4d75-bc29-a7c6399befa8",
+            "target-node" : "1368ab41-aa11-430b-acc0-f95bb11529ca",
+            "source-slot" : "Annotated data",
+            "target-slot" : "Input",
+            "metadata" : {
+              "uuid" : "5e2b2cec-341b-4f51-a9dc-31b04d2812fa",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
+            "source-node" : "1368ab41-aa11-430b-acc0-f95bb11529ca",
+            "target-node" : "c539390c-778f-4152-b934-06bc3c180790",
+            "source-slot" : "Output",
+            "target-slot" : "Input 1",
+            "metadata" : {
+              "uuid" : "e93361bb-f4ae-424c-b7e8-adce1d6716bd",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
+            "source-node" : "4266c986-d618-44b8-b209-02a085643e6b",
+            "target-node" : "329fdbd9-96d1-48ba-820c-f4166497b97a",
+            "source-slot" : "IO Interface Data 1",
+            "target-slot" : "Data 1",
+            "metadata" : {
+              "uuid" : "b7a74e7b-87bb-4a8c-8087-988817738c76",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
+            "source-node" : "329fdbd9-96d1-48ba-820c-f4166497b97a",
+            "target-node" : "7e9dbc41-8e01-4c03-96be-dbc07fc08e0c",
+            "source-slot" : "Data 1",
+            "target-slot" : "Input",
+            "metadata" : {
+              "uuid" : "b8424448-c29b-4400-815b-bba9864eef66",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
             "source-node" : "46b1a228-a80e-4eb5-8be4-631785f4be3a",
             "target-node" : "85787ded-16a6-4066-882c-b3649f16bcaa",
             "source-slot" : "Output",
             "target-slot" : "Data",
             "metadata" : {
               "uuid" : "7a1ee2cc-40b6-4119-bb3f-e221ca69307b",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
+            "source-node" : "686b8f54-14df-4358-bb14-aeecbe6a6acb",
+            "target-node" : "0862e272-b9e0-430a-8065-8ced6e89518f",
+            "source-slot" : "Output",
+            "target-slot" : "Input 1",
+            "metadata" : {
+              "uuid" : "94c2ae63-7b72-4730-8632-db77285d6a7e",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
+            "source-node" : "911ff1f3-e406-48d1-a6c4-02334210b9de",
+            "target-node" : "b8befd1a-2e61-4db5-8d35-49e63978ca20",
+            "source-slot" : "Data",
+            "target-slot" : "Input",
+            "metadata" : {
+              "uuid" : "a1ff6c21-0694-44ed-973c-157bb8e95dee",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
+            "source-node" : "329fdbd9-96d1-48ba-820c-f4166497b97a",
+            "target-node" : "a795d42b-ff38-49f3-b4ea-d6df52c4cfbf",
+            "source-slot" : "Data 1",
+            "target-slot" : "Input",
+            "metadata" : {
+              "uuid" : "26cd7575-72b0-4e28-880d-c4e6f15a6ba0",
+              "ui-shape" : "Elbow",
+              "control-points" : { }
+            }
+          }, {
+            "source-node" : "bdaf09d8-c249-4f7e-bd31-5a48f76ab79f",
+            "target-node" : "b683d875-e2dc-4e73-955e-ea7eab489d79",
+            "source-slot" : "Annotated data",
+            "target-slot" : "Input",
+            "metadata" : {
+              "uuid" : "1f92e279-7821-4eae-8f01-dbcf19c6ffa2",
               "ui-shape" : "Elbow",
               "control-points" : { }
             }
@@ -24610,8 +25056,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "output-from-imagej-importers/Output" : {
           "id" : "imagej-window-to-imgplus",
@@ -24743,8 +25189,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "output-from-imagej-importers/Output" : {
           "id" : "imagej-window-to-imgplus",
@@ -24906,8 +25352,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -25094,8 +25540,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "output-from-imagej-importers/Output" : {
           "id" : "imagej-window-to-imgplus",
@@ -25270,8 +25716,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "output-from-imagej-importers/Flat-field" : {
           "id" : "imagej-window-to-imgplus",
@@ -25388,8 +25834,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -25472,8 +25918,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -25609,8 +26055,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "script-parameters" : {
           "parameters" : { }
@@ -25704,8 +26150,8 @@
         "jipipe:adaptive-parameters/attach-only-non-default-parameter-annotations" : true,
         "jipipe:adaptive-parameters/attach-parameter-annotations" : true,
         "jipipe:adaptive-parameters/parameter-annotations-prefix" : "",
-        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/overridden-parameters" : [ ],
+        "jipipe:adaptive-parameters/enabled" : true,
         "jipipe:adaptive-parameters/parameter-annotations-use-internal-names" : false,
         "jipipe:parameter-slot-algorithm/has-parameter-slot" : false,
         "jipipe:parameter-slot-algorithm/attach-only-non-default-parameter-annotations" : true,
@@ -25725,342 +26171,12 @@
       }
     },
     "edges" : [ {
-      "source-node" : "80ff5496-2d5f-4930-994e-cd1b31bcddeb",
-      "target-node" : "1ad957fb-f38e-4267-aeb8-4122388c1380",
-      "source-slot" : "Annotated data",
-      "target-slot" : "Input",
+      "source-node" : "8f451181-7b11-4990-a29e-d2963702be79",
+      "target-node" : "73c5adf7-808f-4387-a987-1ec2adf8044c",
+      "source-slot" : "Files",
+      "target-slot" : "Paths",
       "metadata" : {
-        "uuid" : "305151d2-10a6-4035-8b25-75152294477c",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "e9af723b-6313-4505-b2b7-2bd9edbe9be6",
-      "target-node" : "7d56dcdf-54bc-4e6c-8cb3-a1a3ec6836ab",
-      "source-slot" : "Output 1",
-      "target-slot" : "mask_roi",
-      "metadata" : {
-        "uuid" : "171c3a74-3df8-42c3-8121-98ff53c8a10e",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "1d710c8a-4173-424d-9579-0855f5edd4e2",
-      "target-node" : "e6f3b6c9-29c7-4f7f-a77a-5c224210751d",
-      "source-slot" : "Flat-field",
-      "target-slot" : "Flat",
-      "metadata" : {
-        "uuid" : "c81a9aba-2d96-40dc-bb44-1560f1fc8f22",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "f061a6ff-97be-4abd-92b4-50ff7bdee7b6",
-      "target-node" : "c5aa339a-f4fa-4b5e-b403-a516374a2eba",
-      "source-slot" : "Output",
-      "target-slot" : "Data",
-      "metadata" : {
-        "uuid" : "2927c0ca-7b09-47e2-90e2-855b6293a86e",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "c724b8f0-fa4b-41bf-91ab-51a755d02be5",
-      "target-node" : "b8e297ca-133c-4dc9-bdaa-dbe1a51930b9",
-      "source-slot" : "Output",
-      "target-slot" : "Data",
-      "metadata" : {
-        "uuid" : "992b0198-8c0e-4c9b-9356-80ad2ba0bdbb",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "a18bdae4-20f4-4181-9497-c9ae81295d70",
-      "target-node" : "9aa083d4-45a5-4a3c-9bc1-abc9c65f5e83",
-      "source-slot" : "Data",
-      "target-slot" : "Input 1",
-      "metadata" : {
-        "uuid" : "661c75c7-e40d-4683-ade1-4771c803322f",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "9a1a1b98-3526-4056-9b03-c5c4179aa790",
-      "target-node" : "78e3b277-3972-4af7-92b7-5ade6bfb9621",
-      "source-slot" : "Output",
-      "target-slot" : "Data",
-      "metadata" : {
-        "uuid" : "679b5155-bd5d-4bdf-b3ec-e08f829d9139",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "2602027c-f74c-4cda-b790-ca94998c14b4",
-      "target-node" : "78e3b277-3972-4af7-92b7-5ade6bfb9621",
-      "source-slot" : "Output",
-      "target-slot" : "Path",
-      "metadata" : {
-        "uuid" : "467822da-c484-4fee-bbbf-2db3f7912b50",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "bf1b859f-21f3-497f-8275-7be336086c08",
-      "target-node" : "1166424e-99d1-4135-9a14-6085eccf003e",
-      "source-slot" : "Data",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "14888fed-954a-407d-98fb-5ff100879973",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "a18bdae4-20f4-4181-9497-c9ae81295d70",
-      "target-node" : "9aa083d4-45a5-4a3c-9bc1-abc9c65f5e83",
-      "source-slot" : "Tiles",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "987b5f60-653b-4da5-b599-78a3bb4008cf",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "b8e297ca-133c-4dc9-bdaa-dbe1a51930b9",
-      "target-node" : "a18bdae4-20f4-4181-9497-c9ae81295d70",
-      "source-slot" : "Data",
-      "target-slot" : "Tiles",
-      "metadata" : {
-        "uuid" : "44718440-2b4f-4d51-8014-ec612938be68",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "5d05bb67-fdb4-41d7-b43c-8ffe6458df0a",
-      "target-node" : "80ff5496-2d5f-4930-994e-cd1b31bcddeb",
-      "source-slot" : "Annotated paths",
-      "target-slot" : "Data",
-      "metadata" : {
-        "uuid" : "eed62c4f-1492-48e2-8563-a9d4274aba13",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "1ad957fb-f38e-4267-aeb8-4122388c1380",
-      "target-node" : "0ffd4a11-f81d-4816-9299-61588a7392bb",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "ae402295-74e0-4d45-b410-cf79f3e0e02e",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "7d56dcdf-54bc-4e6c-8cb3-a1a3ec6836ab",
-      "target-node" : "bf1b859f-21f3-497f-8275-7be336086c08",
-      "source-slot" : "mask",
-      "target-slot" : "Data 1",
-      "metadata" : {
-        "uuid" : "1e9e9408-40ea-45fc-9bd6-e5a8933df0ea",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "1d710c8a-4173-424d-9579-0855f5edd4e2",
-      "target-node" : "e6f3b6c9-29c7-4f7f-a77a-5c224210751d",
-      "source-slot" : "Dark-field",
-      "target-slot" : "Dark",
-      "metadata" : {
-        "uuid" : "8e64ab06-94a9-47fb-8ac1-b0603a95bb44",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "446f316a-39a8-4686-92ba-a8f44c697311",
-      "target-node" : "3b0da9be-54a8-4442-91c6-cb87429a2f42",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "c65b4c2d-bebe-4668-83fe-2baeca29a92b",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "bd9cc699-27b1-46d9-a9ab-6bf0f9cfc9ee",
-      "target-node" : "630ee10e-fba8-41a0-aa2e-2568900a82b0",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "aee966ce-53e1-4b0d-aaed-ded100551464",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "40bda2a1-af47-408b-83ce-def4deac004f",
-      "target-node" : "f061a6ff-97be-4abd-92b4-50ff7bdee7b6",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "e14d68e8-3696-4873-8244-4d22489fae35",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "4bf46d0e-ec58-485c-b03a-ef25cb2a4603",
-      "target-node" : "48090aa2-2435-4632-a59e-3273dbdfcdc6",
-      "source-slot" : "Output",
-      "target-slot" : "montage",
-      "metadata" : {
-        "uuid" : "dc22b12f-defa-4388-a1d9-08029aa047a2",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "5d05bb67-fdb4-41d7-b43c-8ffe6458df0a",
-      "target-node" : "e00176b6-bdd7-48e0-bd2a-6bd89607cfca",
-      "source-slot" : "Annotated paths",
-      "target-slot" : "Annotations",
-      "metadata" : {
-        "uuid" : "0e6d3811-644b-4ce4-b957-c5b79c5e1675",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "7bb039e3-e7ec-45e8-a26f-3c60e1ed8a37",
-      "target-node" : "afbf7502-c2e2-4b40-87a2-bd5ce3c0e8a6",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "dbca1005-7a6a-4a9e-9387-dfcbd3e1fc51",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "bf1b859f-21f3-497f-8275-7be336086c08",
-      "target-node" : "1a429057-a0e9-4f90-91a9-d445e6c2c675",
-      "source-slot" : "Data",
-      "target-slot" : "IO Interface Data 1",
-      "metadata" : {
-        "uuid" : "05a16e77-4fde-4968-9224-fd7ed77d57eb",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "8c0c2af2-8c0d-4a18-b765-7d404bc73054",
-      "target-node" : "489b2e52-a91f-4e0a-a784-ed55450698db",
-      "source-slot" : "Data",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "0095469b-f827-490d-8dba-ccfb35b83df1",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "48090aa2-2435-4632-a59e-3273dbdfcdc6",
-      "target-node" : "e6f3b6c9-29c7-4f7f-a77a-5c224210751d",
-      "source-slot" : "Tiles",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "a6eccb06-1c3c-4e28-a924-ac1bc79f496a",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "e2c565d9-b418-43e8-b027-b585011de631",
-      "target-node" : "1e8533bd-4cb7-4580-8fdf-62b3f472a625",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "d45df40a-282f-4479-ab5d-758810f7ac4b",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "968d4e13-1064-4023-afb4-3619f263c064",
-      "target-node" : "489b2e52-a91f-4e0a-a784-ed55450698db",
-      "source-slot" : "Output",
-      "target-slot" : "Input 1",
-      "metadata" : {
-        "uuid" : "2a1fa071-9c3e-47b2-a21d-9964950c757a",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "66cd8588-d03d-4e9c-9441-ed097411bead",
-      "target-node" : "c5911c97-77a8-40ca-b3a1-bc57d7ae7121",
-      "source-slot" : "Annotated paths",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "cf415e2b-f1b0-47dd-94d5-a54d39251ca5",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "d08cffb0-6955-4912-b9aa-9df28b0ecf23",
-      "target-node" : "fbefb67d-ff2d-4717-a243-37440b7e10e6",
-      "source-slot" : "Annotated paths",
-      "target-slot" : "Folders",
-      "metadata" : {
-        "uuid" : "a7219d62-ba1a-4e17-b61f-d2dc67a7aa6f",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "0982e92d-0027-4422-832a-e0deb232d49a",
-      "target-node" : "71eccec6-60e6-4e13-9285-6a0fe6c96d91",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "ce585ee3-97b4-44e1-8075-b9488e54d1cf",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "a960f8fd-1284-4f85-bed7-47b9741c2b1d",
-      "target-node" : "8756f105-1e75-4d2a-bdef-6c0020abd3b6",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "010fc0c7-857b-4a8c-be7f-d05593fcd636",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "7fcdf524-63d3-4eb8-9681-cfff1959844f",
-      "target-node" : "fab49600-c42e-4330-a55e-4ab638325afa",
-      "source-slot" : "Output",
-      "target-slot" : "mask",
-      "metadata" : {
-        "uuid" : "362ae1af-b1d9-4566-97ce-48559e8cfa79",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "e9af723b-6313-4505-b2b7-2bd9edbe9be6",
-      "target-node" : "9a6df0f2-b9cf-4738-82f8-f43b4ff8d0e3",
-      "source-slot" : "Output 1",
-      "target-slot" : "ROI",
-      "metadata" : {
-        "uuid" : "9ff1035b-0d44-40f5-81a2-1cdedb284162",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "1e8533bd-4cb7-4580-8fdf-62b3f472a625",
-      "target-node" : "a18bdae4-20f4-4181-9497-c9ae81295d70",
-      "source-slot" : "Output",
-      "target-slot" : "Data",
-      "metadata" : {
-        "uuid" : "c854bbd5-7bd4-430a-9dec-f56ad50422b9",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "cd8ed654-8943-408f-ab52-551258733930",
-      "target-node" : "f9c4de9b-148e-4d6d-a6fe-aea61d4138b3",
-      "source-slot" : "Output",
-      "target-slot" : "Mask",
-      "metadata" : {
-        "uuid" : "f518cd5c-ad7e-44f7-95ea-00d55fd39be5",
+        "uuid" : "f4963fe8-34b7-4388-90ea-ce4740805e50",
         "ui-shape" : "Elbow",
         "control-points" : { }
       }
@@ -26075,142 +26191,12 @@
         "control-points" : { }
       }
     }, {
-      "source-node" : "4be87b91-051b-4ef4-8161-a2d72c9f63b5",
-      "target-node" : "8cb8f9b8-535b-4b3c-a2be-84543d6e7ffb",
+      "source-node" : "15705777-1c2f-4d4b-8091-fdcae68f8c48",
+      "target-node" : "7d56dcdf-54bc-4e6c-8cb3-a1a3ec6836ab",
       "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "ad830487-f418-4ba9-b449-e03531e88d24",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "1ad957fb-f38e-4267-aeb8-4122388c1380",
-      "target-node" : "cda8b552-28ad-49e2-abb0-e57aed41ef36",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "de0f48a0-ee91-4137-84f0-54d206454399",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "3b0da9be-54a8-4442-91c6-cb87429a2f42",
-      "target-node" : "4bf46d0e-ec58-485c-b03a-ef25cb2a4603",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "453291ce-ed35-48a0-831d-0c3a1edd83d7",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "1fe69d24-6568-43ee-b391-0021ce76530d",
-      "target-node" : "c1449feb-5562-4a33-9695-1103c2d1b613",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "10873bb8-8c50-46cf-a190-2c775946723d",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "48090aa2-2435-4632-a59e-3273dbdfcdc6",
-      "target-node" : "8c0c2af2-8c0d-4a18-b765-7d404bc73054",
-      "source-slot" : "montage",
       "target-slot" : "Data",
       "metadata" : {
-        "uuid" : "522b712c-68b7-44e0-b7dd-56f2ef8080b0",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "71eccec6-60e6-4e13-9285-6a0fe6c96d91",
-      "target-node" : "4b455dcd-cc3d-4bdf-8b1a-d557779aa1dd",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "af01663f-043d-41e2-9bdf-657815d4b865",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "0103cea2-b109-46de-9d20-8d8ecd241a73",
-      "target-node" : "d08cffb0-6955-4912-b9aa-9df28b0ecf23",
-      "source-slot" : "Annotated paths",
-      "target-slot" : "Paths",
-      "metadata" : {
-        "uuid" : "5fd423e0-446f-46ea-a672-aeb26f451371",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "4b455dcd-cc3d-4bdf-8b1a-d557779aa1dd",
-      "target-node" : "7bb039e3-e7ec-45e8-a26f-3c60e1ed8a37",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "5d8b8abf-9902-4799-8bb0-d8ed4f7fc621",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "1c00bd94-1114-4b56-8add-e969a77e8d63",
-      "target-node" : "91c30daf-4535-4fab-a66a-e9a3d6f632db",
-      "source-slot" : "Annotated data",
-      "target-slot" : "Input 2",
-      "metadata" : {
-        "uuid" : "d9361e19-7087-4fac-b2ec-7f68aef238ea",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "7382d1b1-45bd-4858-9171-89baf294e922",
-      "target-node" : "4bf46d0e-ec58-485c-b03a-ef25cb2a4603",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "bb80597a-3b72-49df-ad33-ee78ecbc10b6",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "afbf7502-c2e2-4b40-87a2-bd5ce3c0e8a6",
-      "target-node" : "cd8ed654-8943-408f-ab52-551258733930",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "096d31e3-7b8f-4247-b3fb-f5ecedf9f001",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "bf1b859f-21f3-497f-8275-7be336086c08",
-      "target-node" : "91c30daf-4535-4fab-a66a-e9a3d6f632db",
-      "source-slot" : "Data",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "c8eb1d8f-1a8c-457f-bd51-f2fa18e78c2c",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "f5092eea-dc9e-42ee-94be-0f9a107a3fe1",
-      "target-node" : "66cd8588-d03d-4e9c-9441-ed097411bead",
-      "source-slot" : "Annotated paths",
-      "target-slot" : "Paths",
-      "metadata" : {
-        "uuid" : "e3058668-e943-4456-a1d8-84eb6adf7dcf",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "fab49600-c42e-4330-a55e-4ab638325afa",
-      "target-node" : "9a6df0f2-b9cf-4738-82f8-f43b4ff8d0e3",
-      "source-slot" : "raw",
-      "target-slot" : "Image",
-      "metadata" : {
-        "uuid" : "f6737af9-86ab-4cac-b7c7-0bbfc3b76cea",
+        "uuid" : "20531711-267c-4a3c-a31b-7c7878fd6f1c",
         "ui-shape" : "Elbow",
         "control-points" : { }
       }
@@ -26225,132 +26211,12 @@
         "control-points" : { }
       }
     }, {
-      "source-node" : "e00176b6-bdd7-48e0-bd2a-6bd89607cfca",
-      "target-node" : "3524bb11-10f2-4dfd-950c-6a4d157d3378",
-      "source-slot" : "Parameters",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "0752a23d-025e-4043-9d9a-90cdd53bfc4c",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "0ffd4a11-f81d-4816-9299-61588a7392bb",
-      "target-node" : "8f451181-7b11-4990-a29e-d2963702be79",
-      "source-slot" : "Output",
-      "target-slot" : "Folders",
-      "metadata" : {
-        "uuid" : "dfa5de8c-cd05-4fc4-b13e-d9d268d7fdb8",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "c1449feb-5562-4a33-9695-1103c2d1b613",
-      "target-node" : "2606a48c-c8e7-49e4-9725-bf3493139e56",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "e56bad1a-9577-4155-a836-68e742e4302e",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "8f451181-7b11-4990-a29e-d2963702be79",
-      "target-node" : "73c5adf7-808f-4387-a987-1ec2adf8044c",
-      "source-slot" : "Files",
-      "target-slot" : "Paths",
-      "metadata" : {
-        "uuid" : "f4963fe8-34b7-4388-90ea-ce4740805e50",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "c5aa339a-f4fa-4b5e-b403-a516374a2eba",
-      "target-node" : "519fc489-3ecc-4f0b-9bf4-9196222bfc33",
-      "source-slot" : "Annotated data",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "f1137eb3-0a66-4a21-a7e0-686b973143b2",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "630ee10e-fba8-41a0-aa2e-2568900a82b0",
-      "target-node" : "f3332d7b-8f63-4324-94dc-47a23443aab5",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "7fef9f7b-48e4-4df6-b7a6-11bccaffd5ac",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "ac1bac07-5bf9-4e40-971d-1143d146e021",
-      "target-node" : "c195a8b0-8f5e-4af5-ad64-dc0f583366eb",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "1ba7b097-3f1d-4c4f-ad91-4e0229105f9b",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "c195a8b0-8f5e-4af5-ad64-dc0f583366eb",
-      "target-node" : "739701bc-1188-426c-b868-01a9abf65050",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "468b9add-39b9-4d07-a89e-3b2a8bb3a1d3",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
       "source-node" : "519fc489-3ecc-4f0b-9bf4-9196222bfc33",
-      "target-node" : "1fe69d24-6568-43ee-b391-0021ce76530d",
-      "source-slot" : "Results",
-      "target-slot" : "Input 1",
-      "metadata" : {
-        "uuid" : "7cdfb5cb-bd11-4a3f-a671-4c8f0634fd4f",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "739701bc-1188-426c-b868-01a9abf65050",
-      "target-node" : "2606a48c-c8e7-49e4-9725-bf3493139e56",
+      "target-node" : "b0b773c8-e8ac-4423-95bc-84fb895acf67",
       "source-slot" : "Output",
-      "target-slot" : "Input",
+      "target-slot" : "Data",
       "metadata" : {
-        "uuid" : "0442caa8-7e35-4ea0-b8b2-95cc1ea1f468",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "e6f3b6c9-29c7-4f7f-a77a-5c224210751d",
-      "target-node" : "c724b8f0-fa4b-41bf-91ab-51a755d02be5",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "42ea8b6f-e88d-4b3a-bead-0e1dee1dff84",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "b8e297ca-133c-4dc9-bdaa-dbe1a51930b9",
-      "target-node" : "4cbb65c3-8dd7-49f3-a03c-88d16f807d1b",
-      "source-slot" : "Data",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "c3add27e-08a5-48d9-8c04-b08d8f645394",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "7d56dcdf-54bc-4e6c-8cb3-a1a3ec6836ab",
-      "target-node" : "e2dc7330-aa2c-4d0f-bc8f-1c8d385820ac",
-      "source-slot" : "Data",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "9f79c2ed-a95a-4a01-993f-228887eee4d3",
+        "uuid" : "9f9d1ce0-4744-4da5-a8ba-3f1e6aa04209",
         "ui-shape" : "Elbow",
         "control-points" : { }
       }
@@ -26367,56 +26233,6 @@
     }, {
       "source-node" : "519fc489-3ecc-4f0b-9bf4-9196222bfc33",
       "target-node" : "b0b773c8-e8ac-4423-95bc-84fb895acf67",
-      "source-slot" : "Output",
-      "target-slot" : "Data",
-      "metadata" : {
-        "uuid" : "9f9d1ce0-4744-4da5-a8ba-3f1e6aa04209",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "b0b773c8-e8ac-4423-95bc-84fb895acf67",
-      "target-node" : "1fe69d24-6568-43ee-b391-0021ce76530d",
-      "source-slot" : "Annotated data",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "4ba41b72-4905-4785-834b-546a1a3901a4",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "ee95e530-8208-460c-bf10-efa5165849b5",
-      "target-node" : "0982e92d-0027-4422-832a-e0deb232d49a",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "9e6d2c8b-52a0-48d6-95ec-294eaa1395d3",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "b911507a-b5bd-4d71-b91b-82f979279a49",
-      "target-node" : "bd9cc699-27b1-46d9-a9ab-6bf0f9cfc9ee",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "f642e223-7965-4571-befc-bffd97b15664",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "9a6df0f2-b9cf-4738-82f8-f43b4ff8d0e3",
-      "target-node" : "15705777-1c2f-4d4b-8091-fdcae68f8c48",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "4a13873a-0d88-440f-a7ed-fe2c06b601df",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "519fc489-3ecc-4f0b-9bf4-9196222bfc33",
-      "target-node" : "b0b773c8-e8ac-4423-95bc-84fb895acf67",
       "source-slot" : "Results",
       "target-slot" : "Table",
       "metadata" : {
@@ -26425,82 +26241,32 @@
         "control-points" : { }
       }
     }, {
-      "source-node" : "c195a8b0-8f5e-4af5-ad64-dc0f583366eb",
-      "target-node" : "446f316a-39a8-4686-92ba-a8f44c697311",
-      "source-slot" : "Output 1",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "2afa1b95-2a92-4441-971c-85154e5b8ce4",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "3524bb11-10f2-4dfd-950c-6a4d157d3378",
+      "source-node" : "5d05bb67-fdb4-41d7-b43c-8ffe6458df0a",
       "target-node" : "80ff5496-2d5f-4930-994e-cd1b31bcddeb",
-      "source-slot" : "Output",
-      "target-slot" : "Table",
-      "metadata" : {
-        "uuid" : "7ae69772-1b34-4786-82b2-41cd22814f25",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "e2dc7330-aa2c-4d0f-bc8f-1c8d385820ac",
-      "target-node" : "1d710c8a-4173-424d-9579-0855f5edd4e2",
-      "source-slot" : "Output",
-      "target-slot" : "Input 1",
-      "metadata" : {
-        "uuid" : "f566e051-2091-4567-9cfc-fc8ae79719a5",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "1166424e-99d1-4135-9a14-6085eccf003e",
-      "target-node" : "1c00bd94-1114-4b56-8add-e969a77e8d63",
-      "source-slot" : "Output",
-      "target-slot" : "Annotations",
-      "metadata" : {
-        "uuid" : "5472a517-2037-4fa2-bc4b-3f5205544859",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "f061a6ff-97be-4abd-92b4-50ff7bdee7b6",
-      "target-node" : "c5aa339a-f4fa-4b5e-b403-a516374a2eba",
-      "source-slot" : "Results",
-      "target-slot" : "Table",
-      "metadata" : {
-        "uuid" : "6f545e20-dc70-48ca-9ed5-25c753fcf909",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "7ddbb1b8-6dd0-453d-87e8-3ad806a5d1bf",
-      "target-node" : "0103cea2-b109-46de-9d20-8d8ecd241a73",
       "source-slot" : "Annotated paths",
-      "target-slot" : "Paths",
+      "target-slot" : "Data",
       "metadata" : {
-        "uuid" : "6e8b1920-141e-48bd-8de3-df7cb9c41b94",
+        "uuid" : "eed62c4f-1492-48e2-8563-a9d4274aba13",
         "ui-shape" : "Elbow",
         "control-points" : { }
       }
     }, {
-      "source-node" : "ef625091-0d1f-43d7-b859-0944b7ebfe2d",
-      "target-node" : "40bda2a1-af47-408b-83ce-def4deac004f",
+      "source-node" : "4b455dcd-cc3d-4bdf-8b1a-d557779aa1dd",
+      "target-node" : "7bb039e3-e7ec-45e8-a26f-3c60e1ed8a37",
       "source-slot" : "Output",
       "target-slot" : "Input",
       "metadata" : {
-        "uuid" : "3ce59514-ca9f-460c-b578-ab679ef530b3",
+        "uuid" : "5d8b8abf-9902-4799-8bb0-d8ed4f7fc621",
         "ui-shape" : "Elbow",
         "control-points" : { }
       }
     }, {
-      "source-node" : "489b2e52-a91f-4e0a-a784-ed55450698db",
-      "target-node" : "4be87b91-051b-4ef4-8161-a2d72c9f63b5",
+      "source-node" : "71eccec6-60e6-4e13-9285-6a0fe6c96d91",
+      "target-node" : "4b455dcd-cc3d-4bdf-8b1a-d557779aa1dd",
       "source-slot" : "Output",
       "target-slot" : "Input",
       "metadata" : {
-        "uuid" : "0a268f16-5047-4bc0-b2cc-b70b0fbaef21",
+        "uuid" : "af01663f-043d-41e2-9bdf-657815d4b865",
         "ui-shape" : "Elbow",
         "control-points" : { }
       }
@@ -26515,112 +26281,22 @@
         "control-points" : { }
       }
     }, {
-      "source-node" : "8c0c2af2-8c0d-4a18-b765-7d404bc73054",
-      "target-node" : "968d4e13-1064-4023-afb4-3619f263c064",
-      "source-slot" : "Data",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "5c94f40d-3816-49a0-ac8b-084d71f27332",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "15705777-1c2f-4d4b-8091-fdcae68f8c48",
-      "target-node" : "7d56dcdf-54bc-4e6c-8cb3-a1a3ec6836ab",
+      "source-node" : "f061a6ff-97be-4abd-92b4-50ff7bdee7b6",
+      "target-node" : "c5aa339a-f4fa-4b5e-b403-a516374a2eba",
       "source-slot" : "Output",
       "target-slot" : "Data",
       "metadata" : {
-        "uuid" : "20531711-267c-4a3c-a31b-7c7878fd6f1c",
+        "uuid" : "2927c0ca-7b09-47e2-90e2-855b6293a86e",
         "ui-shape" : "Elbow",
         "control-points" : { }
       }
     }, {
-      "source-node" : "9aa083d4-45a5-4a3c-9bc1-abc9c65f5e83",
-      "target-node" : "bf1b859f-21f3-497f-8275-7be336086c08",
+      "source-node" : "e2dc7330-aa2c-4d0f-bc8f-1c8d385820ac",
+      "target-node" : "1d710c8a-4173-424d-9579-0855f5edd4e2",
       "source-slot" : "Output",
-      "target-slot" : "Data",
-      "metadata" : {
-        "uuid" : "1c40820f-223f-480b-8aad-60c2c4193d8f",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "bf1b859f-21f3-497f-8275-7be336086c08",
-      "target-node" : "1a429057-a0e9-4f90-91a9-d445e6c2c675",
-      "source-slot" : "Data 1",
-      "target-slot" : "IO Interface Data",
-      "metadata" : {
-        "uuid" : "3fc597ce-f083-4c64-bb8c-1e0e1e1570c2",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "489b2e52-a91f-4e0a-a784-ed55450698db",
-      "target-node" : "a960f8fd-1284-4f85-bed7-47b9741c2b1d",
-      "source-slot" : "Output 1",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "41ab038f-b666-44e6-8ea4-93dcd8a4d8e8",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "91c30daf-4535-4fab-a66a-e9a3d6f632db",
-      "target-node" : "9a1a1b98-3526-4056-9b03-c5c4179aa790",
-      "source-slot" : "Table",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "ed73c5a9-9aaf-45aa-8de8-f070905a1c51",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "f9c4de9b-148e-4d6d-a6fe-aea61d4138b3",
-      "target-node" : "7fcdf524-63d3-4eb8-9681-cfff1959844f",
-      "source-slot" : "Measurements",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "373dc1d1-a1f9-4601-a5e3-1691ec23432b",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "fab49600-c42e-4330-a55e-4ab638325afa",
-      "target-node" : "e9af723b-6313-4505-b2b7-2bd9edbe9be6",
-      "source-slot" : "mask",
       "target-slot" : "Input 1",
       "metadata" : {
-        "uuid" : "5640c25b-55dd-4103-8fa4-601f734dba9f",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "1fe69d24-6568-43ee-b391-0021ce76530d",
-      "target-node" : "7382d1b1-45bd-4858-9171-89baf294e922",
-      "source-slot" : "Output 1",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "f4c69efd-81cd-4b84-8418-1613371e5fa9",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "cda8b552-28ad-49e2-abb0-e57aed41ef36",
-      "target-node" : "2accd6a2-525f-4375-9eca-a0e94c0317fe",
-      "source-slot" : "Output",
-      "target-slot" : "Folders",
-      "metadata" : {
-        "uuid" : "c964ad92-6ada-400b-933c-1f079d123b2d",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "bf1b859f-21f3-497f-8275-7be336086c08",
-      "target-node" : "91c30daf-4535-4fab-a66a-e9a3d6f632db",
-      "source-slot" : "Data 1",
-      "target-slot" : "Input 1",
-      "metadata" : {
-        "uuid" : "fa109d52-b6ed-425e-bcf4-1e3195bdb691",
+        "uuid" : "f566e051-2091-4567-9cfc-fc8ae79719a5",
         "ui-shape" : "Elbow",
         "control-points" : { }
       }
@@ -26635,122 +26311,62 @@
         "control-points" : { }
       }
     }, {
-      "source-node" : "9a6df0f2-b9cf-4738-82f8-f43b4ff8d0e3",
-      "target-node" : "7d56dcdf-54bc-4e6c-8cb3-a1a3ec6836ab",
-      "source-slot" : "Output",
-      "target-slot" : "mask",
-      "metadata" : {
-        "uuid" : "86e7ef1a-6b81-4a8c-ac06-5ff0ff23e4d6",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "1a429057-a0e9-4f90-91a9-d445e6c2c675",
-      "target-node" : "1c00bd94-1114-4b56-8add-e969a77e8d63",
-      "source-slot" : "IO Interface Data",
-      "target-slot" : "Data",
-      "metadata" : {
-        "uuid" : "a212cce8-1abf-4384-a680-7ead6a357e8b",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "489b2e52-a91f-4e0a-a784-ed55450698db",
-      "target-node" : "ee95e530-8208-460c-bf10-efa5165849b5",
-      "source-slot" : "Output 1",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "52023ed4-4e09-4c82-bab8-ed781d1dade4",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
       "source-node" : "fab49600-c42e-4330-a55e-4ab638325afa",
-      "target-node" : "15900991-55ce-4bf3-a99e-336eaef81ff4",
+      "target-node" : "9a6df0f2-b9cf-4738-82f8-f43b4ff8d0e3",
       "source-slot" : "raw",
-      "target-slot" : "Input",
+      "target-slot" : "Image",
       "metadata" : {
-        "uuid" : "81591201-6433-4895-b404-3e1efc85b648",
+        "uuid" : "f6737af9-86ab-4cac-b7c7-0bbfc3b76cea",
         "ui-shape" : "Elbow",
         "control-points" : { }
       }
     }, {
-      "source-node" : "a06a43df-e353-48de-b1f2-97d28a2eadae",
-      "target-node" : "5d05bb67-fdb4-41d7-b43c-8ffe6458df0a",
+      "source-node" : "8c0c2af2-8c0d-4a18-b765-7d404bc73054",
+      "target-node" : "968d4e13-1064-4023-afb4-3619f263c064",
+      "source-slot" : "Data",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "5c94f40d-3816-49a0-ac8b-084d71f27332",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "9a6df0f2-b9cf-4738-82f8-f43b4ff8d0e3",
+      "target-node" : "15705777-1c2f-4d4b-8091-fdcae68f8c48",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "4a13873a-0d88-440f-a7ed-fe2c06b601df",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "a960f8fd-1284-4f85-bed7-47b9741c2b1d",
+      "target-node" : "8756f105-1e75-4d2a-bdef-6c0020abd3b6",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "010fc0c7-857b-4a8c-be7f-d05593fcd636",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "5d05bb67-fdb4-41d7-b43c-8ffe6458df0a",
+      "target-node" : "e00176b6-bdd7-48e0-bd2a-6bd89607cfca",
       "source-slot" : "Annotated paths",
-      "target-slot" : "Paths",
+      "target-slot" : "Annotations",
       "metadata" : {
-        "uuid" : "8e6014b9-1b15-472a-9144-7f4d14b3c535",
+        "uuid" : "0e6d3811-644b-4ce4-b957-c5b79c5e1675",
         "ui-shape" : "Elbow",
         "control-points" : { }
       }
     }, {
-      "source-node" : "8756f105-1e75-4d2a-bdef-6c0020abd3b6",
-      "target-node" : "4b455dcd-cc3d-4bdf-8b1a-d557779aa1dd",
-      "source-slot" : "Output",
-      "target-slot" : "Input 1",
-      "metadata" : {
-        "uuid" : "7fb8d58b-ac32-47c9-833c-1f78c58119c0",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "f3332d7b-8f63-4324-94dc-47a23443aab5",
-      "target-node" : "ac1bac07-5bf9-4e40-971d-1143d146e021",
-      "source-slot" : "Output",
+      "source-node" : "bf1b859f-21f3-497f-8275-7be336086c08",
+      "target-node" : "1166424e-99d1-4135-9a14-6085eccf003e",
+      "source-slot" : "Data",
       "target-slot" : "Input",
       "metadata" : {
-        "uuid" : "9e352689-532c-4bd6-bca6-26b8878f61ce",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "c5911c97-77a8-40ca-b3a1-bc57d7ae7121",
-      "target-node" : "ef625091-0d1f-43d7-b859-0944b7ebfe2d",
-      "source-slot" : "Output",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "cdff518f-0909-4939-b11d-2c19a7aa9110",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "2606a48c-c8e7-49e4-9725-bf3493139e56",
-      "target-node" : "48090aa2-2435-4632-a59e-3273dbdfcdc6",
-      "source-slot" : "Output",
-      "target-slot" : "Tiles",
-      "metadata" : {
-        "uuid" : "a24a562e-ab29-4295-aa3a-dca54637e44c",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "48090aa2-2435-4632-a59e-3273dbdfcdc6",
-      "target-node" : "1d710c8a-4173-424d-9579-0855f5edd4e2",
-      "source-slot" : "Tiles",
-      "target-slot" : "Input",
-      "metadata" : {
-        "uuid" : "76d4aee6-8edd-4eed-bf56-8d743785332e",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "2accd6a2-525f-4375-9eca-a0e94c0317fe",
-      "target-node" : "7ddbb1b8-6dd0-453d-87e8-3ad806a5d1bf",
-      "source-slot" : "Subfolders",
-      "target-slot" : "Paths",
-      "metadata" : {
-        "uuid" : "04ed1bb0-ff37-4366-8535-2f775464dfbf",
-        "ui-shape" : "Elbow",
-        "control-points" : { }
-      }
-    }, {
-      "source-node" : "8cb8f9b8-535b-4b3c-a2be-84543d6e7ffb",
-      "target-node" : "fab49600-c42e-4330-a55e-4ab638325afa",
-      "source-slot" : "Output 1",
-      "target-slot" : "mask",
-      "metadata" : {
-        "uuid" : "20c1de93-ad28-4ead-afd2-299fe02b8684",
+        "uuid" : "14888fed-954a-407d-98fb-5ff100879973",
         "ui-shape" : "Elbow",
         "control-points" : { }
       }
@@ -26765,6 +26381,206 @@
         "control-points" : { }
       }
     }, {
+      "source-node" : "1a429057-a0e9-4f90-91a9-d445e6c2c675",
+      "target-node" : "1c00bd94-1114-4b56-8add-e969a77e8d63",
+      "source-slot" : "IO Interface Data",
+      "target-slot" : "Data",
+      "metadata" : {
+        "uuid" : "a212cce8-1abf-4384-a680-7ead6a357e8b",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "b911507a-b5bd-4d71-b91b-82f979279a49",
+      "target-node" : "bd9cc699-27b1-46d9-a9ab-6bf0f9cfc9ee",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "f642e223-7965-4571-befc-bffd97b15664",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "9a1a1b98-3526-4056-9b03-c5c4179aa790",
+      "target-node" : "78e3b277-3972-4af7-92b7-5ade6bfb9621",
+      "source-slot" : "Output",
+      "target-slot" : "Data",
+      "metadata" : {
+        "uuid" : "679b5155-bd5d-4bdf-b3ec-e08f829d9139",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "e9af723b-6313-4505-b2b7-2bd9edbe9be6",
+      "target-node" : "7d56dcdf-54bc-4e6c-8cb3-a1a3ec6836ab",
+      "source-slot" : "Output 1",
+      "target-slot" : "mask_roi",
+      "metadata" : {
+        "uuid" : "171c3a74-3df8-42c3-8121-98ff53c8a10e",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "9aa083d4-45a5-4a3c-9bc1-abc9c65f5e83",
+      "target-node" : "bf1b859f-21f3-497f-8275-7be336086c08",
+      "source-slot" : "Output",
+      "target-slot" : "Data",
+      "metadata" : {
+        "uuid" : "1c40820f-223f-480b-8aad-60c2c4193d8f",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "4bf46d0e-ec58-485c-b03a-ef25cb2a4603",
+      "target-node" : "48090aa2-2435-4632-a59e-3273dbdfcdc6",
+      "source-slot" : "Output",
+      "target-slot" : "montage",
+      "metadata" : {
+        "uuid" : "dc22b12f-defa-4388-a1d9-08029aa047a2",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "48090aa2-2435-4632-a59e-3273dbdfcdc6",
+      "target-node" : "1d710c8a-4173-424d-9579-0855f5edd4e2",
+      "source-slot" : "Tiles",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "76d4aee6-8edd-4eed-bf56-8d743785332e",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "bf1b859f-21f3-497f-8275-7be336086c08",
+      "target-node" : "1a429057-a0e9-4f90-91a9-d445e6c2c675",
+      "source-slot" : "Data 1",
+      "target-slot" : "IO Interface Data",
+      "metadata" : {
+        "uuid" : "3fc597ce-f083-4c64-bb8c-1e0e1e1570c2",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "1166424e-99d1-4135-9a14-6085eccf003e",
+      "target-node" : "1c00bd94-1114-4b56-8add-e969a77e8d63",
+      "source-slot" : "Output",
+      "target-slot" : "Annotations",
+      "metadata" : {
+        "uuid" : "5472a517-2037-4fa2-bc4b-3f5205544859",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "c195a8b0-8f5e-4af5-ad64-dc0f583366eb",
+      "target-node" : "446f316a-39a8-4686-92ba-a8f44c697311",
+      "source-slot" : "Output 1",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "2afa1b95-2a92-4441-971c-85154e5b8ce4",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "f3332d7b-8f63-4324-94dc-47a23443aab5",
+      "target-node" : "ac1bac07-5bf9-4e40-971d-1143d146e021",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "9e352689-532c-4bd6-bca6-26b8878f61ce",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "1ad957fb-f38e-4267-aeb8-4122388c1380",
+      "target-node" : "0ffd4a11-f81d-4816-9299-61588a7392bb",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "ae402295-74e0-4d45-b410-cf79f3e0e02e",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "630ee10e-fba8-41a0-aa2e-2568900a82b0",
+      "target-node" : "f3332d7b-8f63-4324-94dc-47a23443aab5",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "7fef9f7b-48e4-4df6-b7a6-11bccaffd5ac",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "40bda2a1-af47-408b-83ce-def4deac004f",
+      "target-node" : "f061a6ff-97be-4abd-92b4-50ff7bdee7b6",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "e14d68e8-3696-4873-8244-4d22489fae35",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "7bb039e3-e7ec-45e8-a26f-3c60e1ed8a37",
+      "target-node" : "afbf7502-c2e2-4b40-87a2-bd5ce3c0e8a6",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "dbca1005-7a6a-4a9e-9387-dfcbd3e1fc51",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "1fe69d24-6568-43ee-b391-0021ce76530d",
+      "target-node" : "7382d1b1-45bd-4858-9171-89baf294e922",
+      "source-slot" : "Output 1",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "f4c69efd-81cd-4b84-8418-1613371e5fa9",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "ac1bac07-5bf9-4e40-971d-1143d146e021",
+      "target-node" : "c195a8b0-8f5e-4af5-ad64-dc0f583366eb",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "1ba7b097-3f1d-4c4f-ad91-4e0229105f9b",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "bf1b859f-21f3-497f-8275-7be336086c08",
+      "target-node" : "91c30daf-4535-4fab-a66a-e9a3d6f632db",
+      "source-slot" : "Data 1",
+      "target-slot" : "Input 1",
+      "metadata" : {
+        "uuid" : "fa109d52-b6ed-425e-bcf4-1e3195bdb691",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "1fe69d24-6568-43ee-b391-0021ce76530d",
+      "target-node" : "c1449feb-5562-4a33-9695-1103c2d1b613",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "10873bb8-8c50-46cf-a190-2c775946723d",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "489b2e52-a91f-4e0a-a784-ed55450698db",
+      "target-node" : "a960f8fd-1284-4f85-bed7-47b9741c2b1d",
+      "source-slot" : "Output 1",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "41ab038f-b666-44e6-8ea4-93dcd8a4d8e8",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
       "source-node" : "f32f3a0c-bcb5-469c-8299-453c087df7b4",
       "target-node" : "a06a43df-e353-48de-b1f2-97d28a2eadae",
       "source-slot" : "Output",
@@ -26775,12 +26591,642 @@
         "control-points" : { }
       }
     }, {
+      "source-node" : "d08cffb0-6955-4912-b9aa-9df28b0ecf23",
+      "target-node" : "fbefb67d-ff2d-4717-a243-37440b7e10e6",
+      "source-slot" : "Annotated paths",
+      "target-slot" : "Folders",
+      "metadata" : {
+        "uuid" : "a7219d62-ba1a-4e17-b61f-d2dc67a7aa6f",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "519fc489-3ecc-4f0b-9bf4-9196222bfc33",
+      "target-node" : "1fe69d24-6568-43ee-b391-0021ce76530d",
+      "source-slot" : "Results",
+      "target-slot" : "Input 1",
+      "metadata" : {
+        "uuid" : "7cdfb5cb-bd11-4a3f-a671-4c8f0634fd4f",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "b8e297ca-133c-4dc9-bdaa-dbe1a51930b9",
+      "target-node" : "4cbb65c3-8dd7-49f3-a03c-88d16f807d1b",
+      "source-slot" : "Data",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "c3add27e-08a5-48d9-8c04-b08d8f645394",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "446f316a-39a8-4686-92ba-a8f44c697311",
+      "target-node" : "3b0da9be-54a8-4442-91c6-cb87429a2f42",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "c65b4c2d-bebe-4668-83fe-2baeca29a92b",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "f5092eea-dc9e-42ee-94be-0f9a107a3fe1",
+      "target-node" : "66cd8588-d03d-4e9c-9441-ed097411bead",
+      "source-slot" : "Annotated paths",
+      "target-slot" : "Paths",
+      "metadata" : {
+        "uuid" : "e3058668-e943-4456-a1d8-84eb6adf7dcf",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "7382d1b1-45bd-4858-9171-89baf294e922",
+      "target-node" : "4bf46d0e-ec58-485c-b03a-ef25cb2a4603",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "bb80597a-3b72-49df-ad33-ee78ecbc10b6",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "1d710c8a-4173-424d-9579-0855f5edd4e2",
+      "target-node" : "e6f3b6c9-29c7-4f7f-a77a-5c224210751d",
+      "source-slot" : "Flat-field",
+      "target-slot" : "Flat",
+      "metadata" : {
+        "uuid" : "c81a9aba-2d96-40dc-bb44-1560f1fc8f22",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "7ddbb1b8-6dd0-453d-87e8-3ad806a5d1bf",
+      "target-node" : "0103cea2-b109-46de-9d20-8d8ecd241a73",
+      "source-slot" : "Annotated paths",
+      "target-slot" : "Paths",
+      "metadata" : {
+        "uuid" : "6e8b1920-141e-48bd-8de3-df7cb9c41b94",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "a18bdae4-20f4-4181-9497-c9ae81295d70",
+      "target-node" : "9aa083d4-45a5-4a3c-9bc1-abc9c65f5e83",
+      "source-slot" : "Data",
+      "target-slot" : "Input 1",
+      "metadata" : {
+        "uuid" : "661c75c7-e40d-4683-ade1-4771c803322f",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "2606a48c-c8e7-49e4-9725-bf3493139e56",
+      "target-node" : "48090aa2-2435-4632-a59e-3273dbdfcdc6",
+      "source-slot" : "Output",
+      "target-slot" : "Tiles",
+      "metadata" : {
+        "uuid" : "a24a562e-ab29-4295-aa3a-dca54637e44c",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "0982e92d-0027-4422-832a-e0deb232d49a",
+      "target-node" : "71eccec6-60e6-4e13-9285-6a0fe6c96d91",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "ce585ee3-97b4-44e1-8075-b9488e54d1cf",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "c5911c97-77a8-40ca-b3a1-bc57d7ae7121",
+      "target-node" : "ef625091-0d1f-43d7-b859-0944b7ebfe2d",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "cdff518f-0909-4939-b11d-2c19a7aa9110",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "fab49600-c42e-4330-a55e-4ab638325afa",
+      "target-node" : "e9af723b-6313-4505-b2b7-2bd9edbe9be6",
+      "source-slot" : "mask",
+      "target-slot" : "Input 1",
+      "metadata" : {
+        "uuid" : "5640c25b-55dd-4103-8fa4-601f734dba9f",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "c195a8b0-8f5e-4af5-ad64-dc0f583366eb",
+      "target-node" : "739701bc-1188-426c-b868-01a9abf65050",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "468b9add-39b9-4d07-a89e-3b2a8bb3a1d3",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "91c30daf-4535-4fab-a66a-e9a3d6f632db",
+      "target-node" : "9a1a1b98-3526-4056-9b03-c5c4179aa790",
+      "source-slot" : "Table",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "ed73c5a9-9aaf-45aa-8de8-f070905a1c51",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "c724b8f0-fa4b-41bf-91ab-51a755d02be5",
+      "target-node" : "b8e297ca-133c-4dc9-bdaa-dbe1a51930b9",
+      "source-slot" : "Output",
+      "target-slot" : "Data",
+      "metadata" : {
+        "uuid" : "992b0198-8c0e-4c9b-9356-80ad2ba0bdbb",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "3b0da9be-54a8-4442-91c6-cb87429a2f42",
+      "target-node" : "4bf46d0e-ec58-485c-b03a-ef25cb2a4603",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "453291ce-ed35-48a0-831d-0c3a1edd83d7",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "7d56dcdf-54bc-4e6c-8cb3-a1a3ec6836ab",
+      "target-node" : "bf1b859f-21f3-497f-8275-7be336086c08",
+      "source-slot" : "mask",
+      "target-slot" : "Data 1",
+      "metadata" : {
+        "uuid" : "1e9e9408-40ea-45fc-9bd6-e5a8933df0ea",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
       "source-node" : "4cbb65c3-8dd7-49f3-a03c-88d16f807d1b",
       "target-node" : "e2c565d9-b418-43e8-b027-b585011de631",
       "source-slot" : "Output",
       "target-slot" : "Input",
       "metadata" : {
         "uuid" : "a3a69257-d535-4b3a-aa8b-527aca69b07e",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "bf1b859f-21f3-497f-8275-7be336086c08",
+      "target-node" : "91c30daf-4535-4fab-a66a-e9a3d6f632db",
+      "source-slot" : "Data",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "c8eb1d8f-1a8c-457f-bd51-f2fa18e78c2c",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "bd9cc699-27b1-46d9-a9ab-6bf0f9cfc9ee",
+      "target-node" : "630ee10e-fba8-41a0-aa2e-2568900a82b0",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "aee966ce-53e1-4b0d-aaed-ded100551464",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "cd8ed654-8943-408f-ab52-551258733930",
+      "target-node" : "f9c4de9b-148e-4d6d-a6fe-aea61d4138b3",
+      "source-slot" : "Output",
+      "target-slot" : "Mask",
+      "metadata" : {
+        "uuid" : "f518cd5c-ad7e-44f7-95ea-00d55fd39be5",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "c1449feb-5562-4a33-9695-1103c2d1b613",
+      "target-node" : "2606a48c-c8e7-49e4-9725-bf3493139e56",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "e56bad1a-9577-4155-a836-68e742e4302e",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "2accd6a2-525f-4375-9eca-a0e94c0317fe",
+      "target-node" : "7ddbb1b8-6dd0-453d-87e8-3ad806a5d1bf",
+      "source-slot" : "Subfolders",
+      "target-slot" : "Paths",
+      "metadata" : {
+        "uuid" : "04ed1bb0-ff37-4366-8535-2f775464dfbf",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "1c00bd94-1114-4b56-8add-e969a77e8d63",
+      "target-node" : "91c30daf-4535-4fab-a66a-e9a3d6f632db",
+      "source-slot" : "Annotated data",
+      "target-slot" : "Input 2",
+      "metadata" : {
+        "uuid" : "d9361e19-7087-4fac-b2ec-7f68aef238ea",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "1ad957fb-f38e-4267-aeb8-4122388c1380",
+      "target-node" : "cda8b552-28ad-49e2-abb0-e57aed41ef36",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "de0f48a0-ee91-4137-84f0-54d206454399",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "489b2e52-a91f-4e0a-a784-ed55450698db",
+      "target-node" : "4be87b91-051b-4ef4-8161-a2d72c9f63b5",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "0a268f16-5047-4bc0-b2cc-b70b0fbaef21",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "b8e297ca-133c-4dc9-bdaa-dbe1a51930b9",
+      "target-node" : "a18bdae4-20f4-4181-9497-c9ae81295d70",
+      "source-slot" : "Data",
+      "target-slot" : "Tiles",
+      "metadata" : {
+        "uuid" : "44718440-2b4f-4d51-8014-ec612938be68",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "f9c4de9b-148e-4d6d-a6fe-aea61d4138b3",
+      "target-node" : "7fcdf524-63d3-4eb8-9681-cfff1959844f",
+      "source-slot" : "Measurements",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "373dc1d1-a1f9-4601-a5e3-1691ec23432b",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "4be87b91-051b-4ef4-8161-a2d72c9f63b5",
+      "target-node" : "8cb8f9b8-535b-4b3c-a2be-84543d6e7ffb",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "ad830487-f418-4ba9-b449-e03531e88d24",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "1e8533bd-4cb7-4580-8fdf-62b3f472a625",
+      "target-node" : "a18bdae4-20f4-4181-9497-c9ae81295d70",
+      "source-slot" : "Output",
+      "target-slot" : "Data",
+      "metadata" : {
+        "uuid" : "c854bbd5-7bd4-430a-9dec-f56ad50422b9",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "48090aa2-2435-4632-a59e-3273dbdfcdc6",
+      "target-node" : "8c0c2af2-8c0d-4a18-b765-7d404bc73054",
+      "source-slot" : "montage",
+      "target-slot" : "Data",
+      "metadata" : {
+        "uuid" : "522b712c-68b7-44e0-b7dd-56f2ef8080b0",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "80ff5496-2d5f-4930-994e-cd1b31bcddeb",
+      "target-node" : "1ad957fb-f38e-4267-aeb8-4122388c1380",
+      "source-slot" : "Annotated data",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "305151d2-10a6-4035-8b25-75152294477c",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "3524bb11-10f2-4dfd-950c-6a4d157d3378",
+      "target-node" : "80ff5496-2d5f-4930-994e-cd1b31bcddeb",
+      "source-slot" : "Output",
+      "target-slot" : "Table",
+      "metadata" : {
+        "uuid" : "7ae69772-1b34-4786-82b2-41cd22814f25",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "66cd8588-d03d-4e9c-9441-ed097411bead",
+      "target-node" : "c5911c97-77a8-40ca-b3a1-bc57d7ae7121",
+      "source-slot" : "Annotated paths",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "cf415e2b-f1b0-47dd-94d5-a54d39251ca5",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "0ffd4a11-f81d-4816-9299-61588a7392bb",
+      "target-node" : "8f451181-7b11-4990-a29e-d2963702be79",
+      "source-slot" : "Output",
+      "target-slot" : "Folders",
+      "metadata" : {
+        "uuid" : "dfa5de8c-cd05-4fc4-b13e-d9d268d7fdb8",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "c5aa339a-f4fa-4b5e-b403-a516374a2eba",
+      "target-node" : "519fc489-3ecc-4f0b-9bf4-9196222bfc33",
+      "source-slot" : "Annotated data",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "f1137eb3-0a66-4a21-a7e0-686b973143b2",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "a06a43df-e353-48de-b1f2-97d28a2eadae",
+      "target-node" : "5d05bb67-fdb4-41d7-b43c-8ffe6458df0a",
+      "source-slot" : "Annotated paths",
+      "target-slot" : "Paths",
+      "metadata" : {
+        "uuid" : "8e6014b9-1b15-472a-9144-7f4d14b3c535",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "fab49600-c42e-4330-a55e-4ab638325afa",
+      "target-node" : "15900991-55ce-4bf3-a99e-336eaef81ff4",
+      "source-slot" : "raw",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "81591201-6433-4895-b404-3e1efc85b648",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "9a6df0f2-b9cf-4738-82f8-f43b4ff8d0e3",
+      "target-node" : "7d56dcdf-54bc-4e6c-8cb3-a1a3ec6836ab",
+      "source-slot" : "Output",
+      "target-slot" : "mask",
+      "metadata" : {
+        "uuid" : "86e7ef1a-6b81-4a8c-ac06-5ff0ff23e4d6",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "b0b773c8-e8ac-4423-95bc-84fb895acf67",
+      "target-node" : "1fe69d24-6568-43ee-b391-0021ce76530d",
+      "source-slot" : "Annotated data",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "4ba41b72-4905-4785-834b-546a1a3901a4",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "968d4e13-1064-4023-afb4-3619f263c064",
+      "target-node" : "489b2e52-a91f-4e0a-a784-ed55450698db",
+      "source-slot" : "Output",
+      "target-slot" : "Input 1",
+      "metadata" : {
+        "uuid" : "2a1fa071-9c3e-47b2-a21d-9964950c757a",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "1d710c8a-4173-424d-9579-0855f5edd4e2",
+      "target-node" : "e6f3b6c9-29c7-4f7f-a77a-5c224210751d",
+      "source-slot" : "Dark-field",
+      "target-slot" : "Dark",
+      "metadata" : {
+        "uuid" : "8e64ab06-94a9-47fb-8ac1-b0603a95bb44",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "48090aa2-2435-4632-a59e-3273dbdfcdc6",
+      "target-node" : "e6f3b6c9-29c7-4f7f-a77a-5c224210751d",
+      "source-slot" : "Tiles",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "a6eccb06-1c3c-4e28-a924-ac1bc79f496a",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "8756f105-1e75-4d2a-bdef-6c0020abd3b6",
+      "target-node" : "4b455dcd-cc3d-4bdf-8b1a-d557779aa1dd",
+      "source-slot" : "Output",
+      "target-slot" : "Input 1",
+      "metadata" : {
+        "uuid" : "7fb8d58b-ac32-47c9-833c-1f78c58119c0",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "739701bc-1188-426c-b868-01a9abf65050",
+      "target-node" : "2606a48c-c8e7-49e4-9725-bf3493139e56",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "0442caa8-7e35-4ea0-b8b2-95cc1ea1f468",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "f061a6ff-97be-4abd-92b4-50ff7bdee7b6",
+      "target-node" : "c5aa339a-f4fa-4b5e-b403-a516374a2eba",
+      "source-slot" : "Results",
+      "target-slot" : "Table",
+      "metadata" : {
+        "uuid" : "6f545e20-dc70-48ca-9ed5-25c753fcf909",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "ee95e530-8208-460c-bf10-efa5165849b5",
+      "target-node" : "0982e92d-0027-4422-832a-e0deb232d49a",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "9e6d2c8b-52a0-48d6-95ec-294eaa1395d3",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "ef625091-0d1f-43d7-b859-0944b7ebfe2d",
+      "target-node" : "40bda2a1-af47-408b-83ce-def4deac004f",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "3ce59514-ca9f-460c-b578-ab679ef530b3",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "afbf7502-c2e2-4b40-87a2-bd5ce3c0e8a6",
+      "target-node" : "cd8ed654-8943-408f-ab52-551258733930",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "096d31e3-7b8f-4247-b3fb-f5ecedf9f001",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "a18bdae4-20f4-4181-9497-c9ae81295d70",
+      "target-node" : "9aa083d4-45a5-4a3c-9bc1-abc9c65f5e83",
+      "source-slot" : "Tiles",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "987b5f60-653b-4da5-b599-78a3bb4008cf",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "e00176b6-bdd7-48e0-bd2a-6bd89607cfca",
+      "target-node" : "3524bb11-10f2-4dfd-950c-6a4d157d3378",
+      "source-slot" : "Parameters",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "0752a23d-025e-4043-9d9a-90cdd53bfc4c",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "489b2e52-a91f-4e0a-a784-ed55450698db",
+      "target-node" : "ee95e530-8208-460c-bf10-efa5165849b5",
+      "source-slot" : "Output 1",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "52023ed4-4e09-4c82-bab8-ed781d1dade4",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "0103cea2-b109-46de-9d20-8d8ecd241a73",
+      "target-node" : "d08cffb0-6955-4912-b9aa-9df28b0ecf23",
+      "source-slot" : "Annotated paths",
+      "target-slot" : "Paths",
+      "metadata" : {
+        "uuid" : "5fd423e0-446f-46ea-a672-aeb26f451371",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "e2c565d9-b418-43e8-b027-b585011de631",
+      "target-node" : "1e8533bd-4cb7-4580-8fdf-62b3f472a625",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "d45df40a-282f-4479-ab5d-758810f7ac4b",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "8cb8f9b8-535b-4b3c-a2be-84543d6e7ffb",
+      "target-node" : "fab49600-c42e-4330-a55e-4ab638325afa",
+      "source-slot" : "Output 1",
+      "target-slot" : "mask",
+      "metadata" : {
+        "uuid" : "20c1de93-ad28-4ead-afd2-299fe02b8684",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "e9af723b-6313-4505-b2b7-2bd9edbe9be6",
+      "target-node" : "9a6df0f2-b9cf-4738-82f8-f43b4ff8d0e3",
+      "source-slot" : "Output 1",
+      "target-slot" : "ROI",
+      "metadata" : {
+        "uuid" : "9ff1035b-0d44-40f5-81a2-1cdedb284162",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "7d56dcdf-54bc-4e6c-8cb3-a1a3ec6836ab",
+      "target-node" : "e2dc7330-aa2c-4d0f-bc8f-1c8d385820ac",
+      "source-slot" : "Data",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "9f79c2ed-a95a-4a01-993f-228887eee4d3",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "bf1b859f-21f3-497f-8275-7be336086c08",
+      "target-node" : "1a429057-a0e9-4f90-91a9-d445e6c2c675",
+      "source-slot" : "Data",
+      "target-slot" : "IO Interface Data 1",
+      "metadata" : {
+        "uuid" : "05a16e77-4fde-4968-9224-fd7ed77d57eb",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "7fcdf524-63d3-4eb8-9681-cfff1959844f",
+      "target-node" : "fab49600-c42e-4330-a55e-4ab638325afa",
+      "source-slot" : "Output",
+      "target-slot" : "mask",
+      "metadata" : {
+        "uuid" : "362ae1af-b1d9-4566-97ce-48559e8cfa79",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "cda8b552-28ad-49e2-abb0-e57aed41ef36",
+      "target-node" : "2accd6a2-525f-4375-9eca-a0e94c0317fe",
+      "source-slot" : "Output",
+      "target-slot" : "Folders",
+      "metadata" : {
+        "uuid" : "c964ad92-6ada-400b-933c-1f079d123b2d",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "e6f3b6c9-29c7-4f7f-a77a-5c224210751d",
+      "target-node" : "c724b8f0-fa4b-41bf-91ab-51a755d02be5",
+      "source-slot" : "Output",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "42ea8b6f-e88d-4b3a-bead-0e1dee1dff84",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "2602027c-f74c-4cda-b790-ca94998c14b4",
+      "target-node" : "78e3b277-3972-4af7-92b7-5ade6bfb9621",
+      "source-slot" : "Output",
+      "target-slot" : "Path",
+      "metadata" : {
+        "uuid" : "467822da-c484-4fee-bbbf-2db3f7912b50",
+        "ui-shape" : "Elbow",
+        "control-points" : { }
+      }
+    }, {
+      "source-node" : "8c0c2af2-8c0d-4a18-b765-7d404bc73054",
+      "target-node" : "489b2e52-a91f-4e0a-a784-ed55450698db",
+      "source-slot" : "Data",
+      "target-slot" : "Input",
+      "metadata" : {
+        "uuid" : "0095469b-f827-490d-8dba-ccfb35b83df1",
         "ui-shape" : "Elbow",
         "control-points" : { }
       }
@@ -27086,32 +27532,22 @@
         }
       },
       "edges" : [ {
+        "source-node" : "999c9b80-1dfc-453a-b7c1-d9fabe699cfb",
+        "target-node" : "6854939d-0900-4a58-ad81-291632fcd924",
+        "source-slot" : "Output",
+        "target-slot" : "Input",
+        "metadata" : {
+          "uuid" : "91c2a5a4-aa7f-430e-9065-847a78b23386",
+          "ui-shape" : "Elbow",
+          "control-points" : { }
+        }
+      }, {
         "source-node" : "c6d5c5ef-c1d5-4ee1-9d93-76c60bdf7211",
         "target-node" : "dcaae8b0-9395-4c30-a425-c4164628f4df",
         "source-slot" : "Output",
         "target-slot" : "Input",
         "metadata" : {
           "uuid" : "6b76a94a-0895-4499-a80c-405fb78162c3",
-          "ui-shape" : "Elbow",
-          "control-points" : { }
-        }
-      }, {
-        "source-node" : "c6d5c5ef-c1d5-4ee1-9d93-76c60bdf7211",
-        "target-node" : "6854939d-0900-4a58-ad81-291632fcd924",
-        "source-slot" : "Output",
-        "target-slot" : "Input",
-        "metadata" : {
-          "uuid" : "553a832c-e707-443b-b41d-e02fdaa95efa",
-          "ui-shape" : "Elbow",
-          "control-points" : { }
-        }
-      }, {
-        "source-node" : "6854939d-0900-4a58-ad81-291632fcd924",
-        "target-node" : "7950851b-ccdb-446f-961f-3cc28fe8814d",
-        "source-slot" : "Output",
-        "target-slot" : "Input",
-        "metadata" : {
-          "uuid" : "387dc7e5-5908-42eb-87ec-f7e1cd6ff53f",
           "ui-shape" : "Elbow",
           "control-points" : { }
         }
@@ -27126,12 +27562,22 @@
           "control-points" : { }
         }
       }, {
-        "source-node" : "999c9b80-1dfc-453a-b7c1-d9fabe699cfb",
+        "source-node" : "c6d5c5ef-c1d5-4ee1-9d93-76c60bdf7211",
         "target-node" : "6854939d-0900-4a58-ad81-291632fcd924",
         "source-slot" : "Output",
         "target-slot" : "Input",
         "metadata" : {
-          "uuid" : "91c2a5a4-aa7f-430e-9065-847a78b23386",
+          "uuid" : "553a832c-e707-443b-b41d-e02fdaa95efa",
+          "ui-shape" : "Elbow",
+          "control-points" : { }
+        }
+      }, {
+        "source-node" : "999c9b80-1dfc-453a-b7c1-d9fabe699cfb",
+        "target-node" : "c6d5c5ef-c1d5-4ee1-9d93-76c60bdf7211",
+        "source-slot" : "Output",
+        "target-slot" : "Input",
+        "metadata" : {
+          "uuid" : "858ba79f-31da-448a-b4ae-a3100f67d059",
           "ui-shape" : "Elbow",
           "control-points" : { }
         }
@@ -27146,12 +27592,12 @@
           "control-points" : { }
         }
       }, {
-        "source-node" : "999c9b80-1dfc-453a-b7c1-d9fabe699cfb",
-        "target-node" : "c6d5c5ef-c1d5-4ee1-9d93-76c60bdf7211",
+        "source-node" : "6854939d-0900-4a58-ad81-291632fcd924",
+        "target-node" : "7950851b-ccdb-446f-961f-3cc28fe8814d",
         "source-slot" : "Output",
         "target-slot" : "Input",
         "metadata" : {
-          "uuid" : "858ba79f-31da-448a-b4ae-a3100f67d059",
+          "uuid" : "387dc7e5-5908-42eb-87ec-f7e1cd6ff53f",
           "ui-shape" : "Elbow",
           "control-points" : { }
         }
